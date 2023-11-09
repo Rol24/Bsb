@@ -26,6 +26,10 @@
             column-gap: 367px;
         }
 
+        &-mainlvl {
+            position: relative;
+        }
+
         &-maintxt {
             color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
             font-family: Handjet;
@@ -39,6 +43,13 @@
             background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
             box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(10px);
+            display: inline-flex;
+            padding: 6px 32px 6px 31px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+
+
         }
     }
 }

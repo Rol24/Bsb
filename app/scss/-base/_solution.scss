@@ -1,5 +1,5 @@
 .solution {
-    padding: 50px 0px;
+    padding: 80px 0px;
 
     &__inner {
         max-height: 712px;
@@ -38,11 +38,14 @@
             max-width: 350px;
             width: 100%;
             padding: 74px 25px 256px;
+            // &:not(:last-child) {
+            //     &::after {
+            //         content: "";
+            //         border-right: 5px solid var(--prime-logo-bs-bcolours-almost-white, #8f1515);
+            //         background: var(--prime-logo-bs-bcolours-clear-white, #7a1212);
+            //     }
 
-            &:not(:last-child) {
-                border-right: 5px solid var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
-                background: var(--prime-logo-bs-bcolours-clear-white, #FFF);
-            }
+            // }
         }
 
         &-mainsmall {
