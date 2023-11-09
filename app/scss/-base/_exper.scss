@@ -1,0 +1,62 @@
+.exper {
+    background-color: #ffffff;
+    padding-top: 100px;
+
+    &__inner {
+        &-num {
+            display: flex;
+            gap: 268px;
+            padding-top: 80px;
+        }
+
+        &-textnum {
+            max-width: 303px;
+            width: 100%;
+
+        }
+
+        &-textup {
+            color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+            font-family: Handjet;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+        }
+
+        &-textdown {
+            margin-left: 18px;
+            color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+            font-family: PT Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.9px;
+        }
+
+        &-numtext {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 35px;
+        }
+
+        &-text {
+            display: flex;
+            gap: 32px;
+        }
+
+        &-textdesc {
+            max-width: 668px;
+            color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+            font-family: PT Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.9px;
+        }
+    }
+}
