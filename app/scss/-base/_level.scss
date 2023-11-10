@@ -1,12 +1,11 @@
 .level {
-    padding: 80px 0;
-    max-height: 524px;
-    height: 100%;
 
+    // height: 100%;
     &__inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 80 0;
 
         &-desc {
             color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
@@ -39,15 +38,15 @@
             line-height: normal;
             letter-spacing: 1.25px;
             border-radius: 7px;
-            border: 1px solid rgba(223, 220, 1, 0.50);
+            border: 1px solid transparent;
             background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
             box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(10px);
-            display: inline-flex;
+            display: inline-block;
             padding: 6px 32px 6px 31px;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
+            margin-left: 40px;
+            margin-top: -30px;
+            white-space: nowrap;
 
 
         }

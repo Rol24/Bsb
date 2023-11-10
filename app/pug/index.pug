@@ -3,15 +3,21 @@ include layouts/_combinations
 include layouts/modules/_m-head.pug
 include layouts/components/header.pug
 include layouts/components/name.pug
+include layouts/components/exper.pug
 include layouts/components/solution.pug
 include layouts/components/level.pug
-include layouts/components/exper.pug
+include layouts/components/tools.pug
+include layouts/components/pair.pug
+include layouts/components/footer.pug
 
 html(lang='ru')
   +m-head
-  +header
+  //- +header
   +name
   +exper
   +solution
   +level
+  +tools
+  +pair
+  +footer
   body

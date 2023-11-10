@@ -1,8 +1,10 @@
 .name {
-    max-height: 900px;
+    max-height: 1527px;
     height: 100%;
     background-color: #726c6c;
-    padding-top: 110px;
+    padding-top: 200px;
+    background-image: url(/assets/images/BG.svg);
+    background-size:cover ;
 
     &__inner {
         position: relative;
@@ -10,10 +12,30 @@
         flex-direction: column;
         gap: 59px;
 
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &--bsb {
+                font-family: "Press Start 2P";
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                background: var(--gradient-cutting-gradient, linear-gradient(233deg, #2D2650 51.6%, #DFDC01 51.62%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
         &-logo {
             position: absolute;
             right: -15%;
-            top: 41%;
+            top: 1%;
         }
 
         &-text {

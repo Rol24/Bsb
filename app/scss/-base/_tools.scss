@@ -1,0 +1,149 @@
+.tools {
+    overflow: hidden;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+            font-family: Handjet;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        &-main {
+            width: 2555px;
+            display: flex;
+            flex-direction: column;
+            gap: 152px;
+            white-space: nowrap;
+            margin-top: 56px;
+
+            &--txt {
+                display: flex;
+                gap: 144px;
+                align-items: center;
+            }
+
+            &--txtdown {
+                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+                font-family: "Press Start 2P";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.4px;
+                text-transform: uppercase;
+            }
+
+            &--txtup {
+                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+                font-family: "Press Start 2P";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.4px;
+                text-transform: uppercase;
+
+            }
+
+            &--image {
+                max-width: 99.627px;
+                max-height: 100px;
+                flex-shrink: 0;
+            }
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            padding: 80px 0;
+            align-items: center;
+
+            &--item {
+                height: 370px;
+                display: flex;
+                width: 1056px;
+                gap: 40px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--image {
+                width: 288px;
+                height: 272px;
+                flex-shrink: 0;
+            }
+
+            &--textbtn {
+                width: 641px;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+            }
+
+            &--text {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            &--btn {
+                width: 205px;
+                height: 56px;
+                display: inline-flex;
+                padding: 10px 40px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background:  #DFDC01;
+                button{
+                    color: var(--prime-logo-bs-bcolours-support-light-purple, #4A399D);
+                    font-family: "Handjet";
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.25px;
+                }
+            }
+        }
+    }
+
+}
+
+.txtup {
+    color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+
+    /* TITLE/BigTitle-40-Black */
+    font-family: Handjet;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.txtdown {
+    overflow: hidden;
+    color: #2B2A28;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
