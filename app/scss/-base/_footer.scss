@@ -1,12 +1,129 @@
 .footer {
+    padding-bottom: 40px;
+    padding-top: 240px;
+    background-image: url(/assets/images/footerbg.svg);
+    background-repeat: no-repeat;
+
     &__inner {
+        display: flex;
+        flex-direction: column;
+
         &-up {
             display: flex;
+            justify-content: space-between;
+
+            ul {
+                color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+                font-family: Handjet;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.25px;
+            }
+
+            li {
+                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+
+                &:first-child {
+                    margin-top: 16px;
+                }
+            }
+
         }
 
+        &-middle {
+            text-align: center;
+            margin: 42px auto;
+        }
+
+
+
         &-upmiddle {
-            &--up {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            width: 705px;
+            justify-content: space-between;
+            row-gap: 24px;
+        }
+
+        &-upright {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            &-first {
                 display: flex;
+                flex-direction: column;
+                gap: 7px;
+                text-align: end;
+            }
+
+            &-txt {
+                color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+                font-family: Handjet;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.25px;
+            }
+
+            a {
+                color: #2D2650;
+                font-family: Handjet;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-align: end;
+            }
+
+            &-second {
+                text-align: end;
+                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
+                text-align: right;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+            }
+
+            &-thirdin {
+                display: flex;
+                align-items: flex-end;
+                text-align: flex-end;
+                justify-content: flex-end;
+                gap: 15px;
+            }
+
+        }
+
+        &-down {
+            display: flex;
+            justify-content: space-between;
+
+            &-text {
+                color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+                text-align: right;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
             }
         }
     }

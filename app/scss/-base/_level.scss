@@ -1,7 +1,9 @@
 .level {
 
+
     // height: 100%;
     &__inner {
+        // position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -23,6 +25,17 @@
             grid-template-columns: 390px 390px;
             gap: 140px;
             column-gap: 367px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 286px;
+                height: 286px;
+                background-image: url(/assets/images/levelanimation.svg);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
         }
 
         &-mainlvl {
@@ -38,7 +51,7 @@
             line-height: normal;
             letter-spacing: 1.25px;
             border-radius: 7px;
-            border: 1px solid transparent;
+            // border: 1px solid rgba(223, 220, 1, 0.50);
             background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
             box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
             backdrop-filter: blur(10px);
