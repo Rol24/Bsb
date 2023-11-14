@@ -1,0 +1,141 @@
+.form {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+
+        &-title {
+            color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+            font-family: Handjet;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        &-main {
+            border-radius: 7px;
+            border: 3px solid rgba(255, 255, 255, 0.20);
+            background: linear-gradient(to bottom right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top right / 50% 50% no-repeat;
+            box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
+            backdrop-filter: blur(10px);
+            padding: 40px 55px;
+
+        }
+    }
+
+    .main__form {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        &-desc {
+            overflow: hidden;
+            color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Handjet;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+        }
+
+        &-fio {
+            input {
+                border-radius: 7px;
+                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                background: rgba(255, 255, 255, 0.30);
+                height: 58px;
+                width: 100%;
+            }
+
+        }
+
+        &-num-mail {
+            display: flex;
+            gap: 36px;
+
+            input {
+                border-radius: 7px;
+                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                background: rgba(255, 255, 255, 0.30);
+                height: 58px;
+                max-width: 482px;
+                width: 100%;
+            }
+
+        }
+
+        &-commit {
+            input {
+                border-radius: 7px;
+                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                background: rgba(255, 255, 255, 0.30);
+                height: 202px;
+                width: 100%;
+
+            }
+            ::placeholder{
+                align-self: start;
+            }
+            
+
+        }
+
+        &-button {
+            display: flex;
+            gap: 32px;
+            justify-content: flex-end;
+
+            p {
+                color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                text-align: right;
+                font-family: PT Sans;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.5px;
+                max-width: 160px;
+            }
+
+            button {
+                background: #DFDC01;
+                display: inline-flex;
+                padding: 10px 40px;
+                justify-content: center;
+                align-items: center;
+                color: #4A399D;
+                font-family: Handjet;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.25px;
+            }
+        }
+
+        ::placeholder {
+            overflow: hidden;
+            color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+            text-overflow: ellipsis;
+            font-family: PT Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.7px;
+        }
+
+        input {
+            display: flex;
+            padding: 20px 0px 20px 20px;
+            align-items: flex-start;
+        }
+    }
+
+}

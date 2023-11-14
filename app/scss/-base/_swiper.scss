@@ -1,0 +1,132 @@
+.swiper__up-inner {
+    overflow: hidden;
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    &-slide {
+        background-color: inherit;
+    }
+}
+
+.swiper__up,
+.swiper__down {
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    &-title {
+        color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+        font-family: Handjet;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}
+
+.swiper-wrapper {
+    max-height: 176px;
+    // overflow: hidden;
+}
+
+.swiper-slide {
+    width: 120px;
+    height: 180px;
+    text-align: center;
+
+    .swiper__up--name{
+        color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+        text-align: center;
+        font-family: Handjet;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+}
+
+.swiper-botton--up,
+.swiper-botton--down {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 53%;
+    width: 1228px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper__up-botton-prev,
+.swiper__up-botton-next,
+.swiper__down-botton-next,
+.swiper__down-botton-next {
+    cursor: pointer;
+}
+
+
+//////////////////////////////////////
+
+
+.swiper__down-inner {
+    overflow: hidden;
+    height: 606px;
+}
+
+.swiper__down {
+    &--data {
+        overflow: hidden;
+        color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+        text-overflow: ellipsis;
+
+        /* TXT/TextTag-14-Reg */
+        font-family: PT Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
+    }
+
+
+    &--text {}
+}
+
+
+// .swiper_down{
+//     height: 606px;
+//     background-image: url("./assets/swiper/NewsBG.svg");
+// }
+
+// .swiper-slide--down{
+//     width: 350px;
+//     height: 270px;
+// }
+
+.swiper__down--data{
+    overflow: hidden;
+color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+text-overflow: ellipsis;
+
+/* TXT/TextTag-14-Reg */
+font-family: PT Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.7px;
+}
+
+.swiper__down-inner{
+    .swiper-slide{
+    width: 350px;
+    height: 270px;
+    }   
+}

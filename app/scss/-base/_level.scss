@@ -1,15 +1,13 @@
 .level {
 
-
-    // height: 100%;
     &__inner {
-        // position: absolute;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 80 0;
 
-        &-desc {
+        &-title {
             color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
             font-family: Handjet;
             font-size: 30px;
