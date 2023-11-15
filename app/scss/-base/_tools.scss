@@ -130,31 +130,211 @@
         }
     }
 
-}
+    .txtup {
+        color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+        font-family: Handjet;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 
-.txtup {
-    color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
-    font-family: Handjet;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+    .txtdown {
+        overflow: hidden;
+        color: #2B2A28;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        font-family: PT Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
 
-.txtdown {
-    overflow: hidden;
-    color: #2B2A28;
-    text-overflow: ellipsis;
-    white-space: wrap;
-    font-family: PT Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.9px;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    @media screen and (max-width:1440px) {
+
+        &__inner {
+
+            &-title {
+                font-size: 2.08vw;
+                letter-spacing: 0.1vw;
+            }
+
+            &-main {
+                padding-bottom: 5.56vw;
+                width: 177.43vw;
+                gap: 10.56vw;
+                margin-top: 3.89vw;
+
+                &--txt {
+                    gap: 10vw;
+                }
+
+                &--txtdown {
+                    font-size: 3.33vw;
+                    letter-spacing: 0.18vw;
+
+                    &--bitriks {
+                        font-size: 3.33vw;
+                        letter-spacing:0.18vw;
+                    }
+                }
+
+                &--txtup {
+                    font-size: 3.33vw;
+                    letter-spacing: 2.4px;
+
+                }
+
+                &--image {
+                    max-width: 6.88vw;
+                    max-height: 6.94vw;
+                }
+            }
+
+            &-card {
+                gap: 3.33vw;
+                padding: 5.56vw 0;
+
+                &--item {
+                    height: 25.69vw;
+                    width: 73.33vw;
+                    gap: 2.78vw;
+                }
+
+                &--image {
+                    width: 20vw;
+                    height: 18.89vw;
+                }
+
+                &--textbtn {
+                    width: 44.51vw;
+                    gap: 3.33vw;
+                }
+
+                &--text {
+                    gap: 1.67vw;
+                }
+
+                &--btn {
+                    width: 14.24vw;
+                    height: 3.89vw;
+                    padding: 0.69vw 2.78vw;
+                    gap: 0.69vw;
+
+                    button {
+                        font-size: 1.74vw;
+                        letter-spacing: 0.09vw;
+                    }
+                }
+            }
+        }
+
+        .txtup {
+            font-size: 2.78vw;
+            letter-spacing: 0.14vw;
+        }
+
+        .txtdown {
+            font-size: 1.25vw;
+            letter-spacing: 0.07vw;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        &__inner {
+
+            &-title {
+                font-size: 3.91vw;
+                letter-spacing: 0.20vw;
+            }
+
+            &-main {
+                padding-bottom: 10.42vw;
+                width: 332.68vw;
+                gap: 19.79vw;
+                margin-top: 7.29vw;
+
+                &--txt {
+                    gap: 18.75vw;
+                }
+
+                &--txtdown {
+                    font-size: 6.25vw;
+                    letter-spacing: 0.32vw;
+
+                    &--bitriks {
+                        font-size: 6.25vw;
+                        letter-spacing: 0.32vw;
+                    }
+                }
+
+                &--txtup {
+                    font-size: 6.25vw;
+                    letter-spacing: 0.32vw;
+
+                }
+
+                &--image {
+                    max-width: 12.89vw;
+                    max-height: 13.02vw;
+                }
+            }
+
+            &-card {
+                gap: 6.25vw;
+                padding: 10.42vw 0;
+
+                &--item {
+                    height: 48.18vw;
+                    width: 137.50vw;
+                    gap: 5.21vw;
+                }
+
+                &--image {
+                    width: 37.50vw;
+                    height: 35.42vw;
+                }
+
+                &--textbtn {
+                    width: 641px;
+                    gap: 48px;
+                }
+
+                &--text {
+                    gap: 24px;
+                }
+
+                &--btn {
+                    width: 205px;
+                    height: 56px;
+                    padding: 10px 40px;
+                    gap: 10px;
+
+                    button {
+                        font-size: 25px;
+                        font-weight: 700;
+                        letter-spacing: 1.25px;
+                    }
+                }
+            }
+        }
+
+        .txtup {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .txtdown {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
+    }
 }

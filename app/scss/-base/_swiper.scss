@@ -1,25 +1,35 @@
-.swiper__up-inner {
-    overflow: hidden;
-    padding: 0 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-
-    &-slide {
-        background-color: inherit;
-    }
-}
-
-.swiper__up,
-.swiper__down {
-    padding: 80px 0;
+.swiper__up {
+    margin: 80px 0;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 80px;
 
+    &-inner {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+
+        &-container {
+            padding: 0 30px;
+        }
+
+        &-slide {
+            background-color: inherit;
+        }
+    }
+
+    &-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
     &-title {
-        color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+        color: #B1B3B3;
         font-family: Handjet;
         font-size: 30px;
         font-style: normal;
@@ -27,106 +37,426 @@
         line-height: normal;
         letter-spacing: 1.5px;
         text-transform: uppercase;
+        margin-bottom: 56px;
     }
-}
 
-.swiper-wrapper {
-    max-height: 176px;
-    // overflow: hidden;
-}
-
-.swiper-slide {
-    width: 120px;
-    height: 180px;
-    text-align: center;
-
-    .swiper__up--name{
-        color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+    .swiper-slide {
+        width: 120px;
+        height: 180px;
         text-align: center;
-        font-family: Handjet;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1px;
+
+        &-up {
+            &-name {
+                color: #F5F5F5;
+                text-align: center;
+                font-family: Handjet;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .swiper-button {
+        &--up {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            top: 60%;
+            max-width: 1228px;
+            width: 100%;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    .swiper__up-button-prev,
+    .swiper__up-button-next,
+    .swiper__down-button-next,
+    .swiper__down-button-prev {
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:1440px) {
+        margin: 5.56vw 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5.56vw;
+
+        &-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+        }
+
+        &-title {
+            color: #B1B3B3;
+            font-family: Handjet;
+            font-size: 2.08vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.14vw;
+            text-transform: uppercase;
+            margin-bottom: 3.89vw;
+        }
+
+        &-inner {}
+
+        .swiper__up-inner {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 3.89vw;
+
+            &-container {
+                padding: 0 2.08vw;
+            }
+
+            &-slide {
+                background-color: inherit;
+            }
+
+            .swiper-slide {
+                width: 8.33vw;
+                height: 12.50vw;
+                text-align: center;
+
+                &-up {
+                    &-name {
+                        color: #F5F5F5;
+                        text-align: center;
+                        font-family: Handjet;
+                        font-size: 1.39vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.07vw;
+                    }
+                }
+            }
+
+            .swiper-button {
+                &--up {
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    top: 60%;
+                    max-width: 85.28vw;
+                    z-index: 2;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+            }
+
+            .swiper__up-button-prev,
+            .swiper__up-button-next,
+            .swiper__down-button-next,
+            .swiper__down-button-prev {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width:768) {
+        margin: 10.42vw 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10.42vw;
+
+        &-inner {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 7.29vw;
+
+            &-container {
+                padding: 0 3.91vw;
+            }
+
+            &-slide {
+                background-color: inherit;
+            }
+        }
+
+        &-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+        }
+
+        &-title {
+            color: #B1B3B3;
+            font-family: Handjet;
+            font-size: 3.91vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.26vw;
+            text-transform: uppercase;
+            margin-bottom: 7.29vw;
+        }
+
+        .swiper-slide {
+            width: 15.63vw;
+            height: 23.44vw;
+            text-align: center;
+
+            &-up {
+                &-name {
+                    color: #F5F5F5;
+                    text-align: center;
+                    font-family: Handjet;
+                    font-size: 2.60vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.13vw;
+                }
+            }
+        }
+
+        .swiper-button {
+            &--up {
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                top: 60%;
+                width: 159.90vw;
+                z-index: 2;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+
+        .swiper__up-button-prev,
+        .swiper__up-button-next,
+        .swiper__down-button-next,
+        .swiper__down-button-prev {
+            cursor: pointer;
+        }
     }
 }
 
-.swiper-botton--up,
-.swiper-botton--down {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 53%;
-    width: 1228px;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.swiper__up-botton-prev,
-.swiper__up-botton-next,
-.swiper__down-botton-next,
-.swiper__down-botton-next {
-    cursor: pointer;
-}
 
 
 //////////////////////////////////////
 
-
-.swiper__down-inner {
-    overflow: hidden;
-    height: 606px;
-}
-
 .swiper__down {
-    &--data {
-        overflow: hidden;
-        color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
-        text-overflow: ellipsis;
+    height: 602px;
+    background-image: url("./assets/swiper/NewsBG.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 80px 0;
+    position: relative;
 
-        /* TXT/TextTag-14-Reg */
-        font-family: PT Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.7px;
+    &-inner {
+        overflow: hidden;
+
+        &-news {
+            &-data {
+                &-item {
+                    overflow: hidden;
+                    color: #F5F5F5;
+                    text-overflow: ellipsis;
+                    font-family: PT Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                }
+
+            }
+
+            &-text {
+
+                &-main {
+                    color: #F5F5F5;
+                    font-family: Handjet;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    margin-bottom: 15px;
+                }
+
+                &-desc {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    overflow: hidden;
+                    color: #F5F5F5;
+                    text-overflow: ellipsis;
+                    font-family: PT Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+
+
+        .swiper-slide {
+            height: 270px;
+            background-image: url("./assets/swiper/PhotoBox.svg");
+            border-radius: 14px;
+            border: 5px solid var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+            border-radius: 14px;
+            padding: 20px 30px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+        }
     }
 
+    &-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
 
-    &--text {}
-}
+    .swiper-button {
+        &--down {
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            top: 48%;
+            width: calc(100% + 120px);
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    @media screen and (max-width:1440px) {
+        height: 41.81vw;
+        margin: 5.56vw 0;
+
+        &-inner {
+
+            .swiper-slide {
+                height: 18.75vw;
+                border-radius: 0.97vw;
+                border: 5px solid var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+                border-radius: 0.97vw;
+                padding: 1.39vw 2.08vw;
+
+                &-down {
+                    &-news {
+                        &-data {
+                            &-item {
+                                font-size: 0.97vw;
+                                letter-spacing: 0.07vw;
+                            }
+
+                        }
+
+                        &-text {
+
+                            &-main {
+                                font-size: 1.39vw;
+                                font-weight: 700;
+                                letter-spacing: 0.07vw;
+                                margin-bottom: 1.04vw;
+                            }
+
+                            &-desc {
+                                font-size: 0.97vw;
+                                letter-spacing: 0.07vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
 
-// .swiper_down{
-//     height: 606px;
-//     background-image: url("./assets/swiper/NewsBG.svg");
-// }
+        .swiper-button {
+            &--down {
+                top: 48%;
+                width: calc(100% + 8.33vw);
+            }
 
-// .swiper-slide--down{
-//     width: 350px;
-//     height: 270px;
-// }
+        }
 
-.swiper__down--data{
-    overflow: hidden;
-color: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
-text-overflow: ellipsis;
+    }
 
-/* TXT/TextTag-14-Reg */
-font-family: PT Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.7px;
-}
+    @media screen and (max-width:768) {
+        height: 78.39vw;
+        margin: 10.42vw 0;
 
-.swiper__down-inner{
-    .swiper-slide{
-    width: 350px;
-    height: 270px;
-    }   
+        &-inner {
+
+            .swiper-slide {
+                height: 35.16vw;
+                border-radius: 1.82vw;
+                border: 0.65vw solid var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+                border-radius: 1.82vw;
+                padding: 2.60vw 3.91vw;
+
+                &-down {
+                    &-news {
+                        &-data {
+                            &-item {
+                                font-size: 1.82vw;
+                                font-weight: 400;
+                                letter-spacing: 0.7vw;
+                            }
+
+                        }
+
+                        &-text {
+
+                            &-main {
+                                font-size: 2.60vw;
+                                letter-spacing: 0.1vw;
+                                margin-bottom: 1.95vw;
+                            }
+
+                            &-desc {
+                                font-size: 1.82vw;
+                                letter-spacing: 0.1vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .swiper-button {
+            &--down {
+                width: calc(100% + 15.63vw);
+                z-index: 2;
+            }
+
+        }
+    }
 }

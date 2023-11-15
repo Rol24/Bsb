@@ -1,18 +1,23 @@
 .exper {
     background-color: #ffffff;
-    padding-top: 100px;
+    margin-top: 100px;
 
     &__inner {
         &-num {
             display: flex;
             gap: 268px;
-            padding-top: 80px;
+            margin-top: 80px;
         }
 
         &-textnum {
             max-width: 303px;
             width: 100%;
 
+        }
+
+        &-img {
+            width: 116px;
+            height: 116px;
         }
 
         &-textup {
@@ -46,6 +51,9 @@
         &-text {
             display: flex;
             gap: 32px;
+            // height: 100%;
+            // max-height: 220px;
+
         }
 
         &-textdesc {
@@ -57,6 +65,133 @@
             font-weight: 400;
             line-height: normal;
             letter-spacing: 0.9px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-color: #2D2650;
+                left: -20px;
+                height: 220px;
+                width: 10px;
+                height: 105%;
+
+            }
+        }
+    }
+
+    @media screen and (max-width:1440px) {
+        margin-top: 6.94vw;
+
+        &__inner {
+            &-num {
+                gap: 18.61vw;
+                margin-top: 5.56vw;
+            }
+
+            &-textnum {
+                max-width: 21.04vw;
+
+            }
+
+            &-textup {
+                font-size: 1.74vw;
+                font-weight: 700;
+                letter-spacing: 1.25px;
+            }
+
+            &-textdown {
+                margin-left: 18px;
+                font-size: 1.25vw;
+                font-weight: 400;
+                letter-spacing: 0.07vw;
+            }
+            &-img {
+                width: 8.06vw;
+                height: 8.06vw;
+            }
+
+            &-numtext {
+                margin-top: 1.67vw;
+                padding-right: 2.43vw;
+            }
+
+            &-text {
+                gap: 2.22vw;
+            }
+
+            &-textdesc {
+                max-width: 46.39vw;
+                font-size: 1.25vw;
+                font-weight: 400;
+                letter-spacing: 0.07vw;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-color: #2D2650;
+                    left: -1.39vw;
+                    width: 0.69vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        margin-top: 13.02vw;
+
+        &__inner {
+            &-num {
+                gap: 34.90vw;
+                margin-top: 10.42vw;
+            }
+
+            &-textnum {
+                max-width: 39.45vw;
+
+            }
+
+            &-textup {
+                font-size: 3.26vw;
+                letter-spacing: 0.20vw;
+            }
+
+            &-textdown {
+                margin-left: 2.34vw;
+                font-size: 2.34vw;
+                font-weight: 400;
+                letter-spacing: 0.9px;
+            }
+
+            &-numtext {
+                margin-top: 3.13vw;
+                padding-right: 4.56vw;
+            }
+            &-img {
+                width: 15.10vw;
+                height: 15.10vw;
+            }
+
+            &-text {
+                gap: 4.17vw;
+            }
+
+            &-textdesc {
+                max-width: 86.98vw;
+                font-size: 2.34vw;
+                font-weight: 400;
+                letter-spacing: 0.13vw;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-color: #2D2650;
+                    left: -2.60vw;
+                    width: 1.30vw;
+
+                }
+            }
         }
     }
 }

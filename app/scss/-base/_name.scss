@@ -1,13 +1,14 @@
 .name {
-    max-height: 1527px;
-    height: 100%;
+    // max-height: 1527px;
+    // height: 100%;
+    position: relative;
+    height: 900px;
     background-color: #726c6c;
     padding-top: 200px;
     background-image: url(/assets/images/BG.svg);
-    background-size:cover ;
+    background-size: cover;
 
     &__inner {
-        position: relative;
         display: flex;
         flex-direction: column;
         gap: 59px;
@@ -18,24 +19,30 @@
             gap: 20px;
 
             &--bsb {
-                font-family: "Press Start 2P";
-                font-size: 80px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-                background: var(--gradient-cutting-gradient, linear-gradient(233deg, #2D2650 51.6%, #DFDC01 51.62%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                p {
+                    font-family: "Press Start 2P";
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    background: var(--gradient-cutting-gradient, linear-gradient(233deg, #2D2650 51.6%, #DFDC01 51.62%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke: 5px #2D2650;
+                }
+
             }
         }
 
         &-logo {
             position: absolute;
-            right: -15%;
-            top: 1%;
+            bottom: calc(-50% + 148px);
+            right: 0;
+            width: 610px;
+            height: 916px;
         }
 
         &-text {
@@ -47,6 +54,78 @@
             line-height: normal;
             letter-spacing: 1.5px;
             text-transform: uppercase;
+        }
+    }
+
+    @media screen and (max-width:1440px) {
+
+        height: 62.50vw;
+        padding-top: 13.89vw;
+
+        &__inner {
+            gap: 4.10vw;
+
+            &-title {
+                gap: 1.39vw;
+
+                &--bsb {
+                    p {
+                        font-size: 5.56vw;
+                        font-weight: 400;
+                        letter-spacing: 4px;
+                        -webkit-text-stroke: 0.35vw #2D2650;
+                    }
+
+                }
+            }
+
+            &-logo {
+                bottom: calc(-50% + 10.28vw);
+                right: 0;
+                width: 42.36vw;
+                height: 63.61vw;
+            }
+
+            &-text {
+                font-size: 2.08vw;
+                font-weight: 700;
+                letter-spacing: 0.14vw;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        height: 117.19vw;
+        padding-top: 26.04vw;
+    
+        &__inner {
+            gap: 7.68vw;
+    
+            &-title {
+                gap: 2.60vw;
+    
+                &--bsb {
+                    p {
+                        font-size: 10.42vw;
+                        font-weight: 400;
+                        letter-spacing: 0.52vw;
+                        -webkit-text-stroke: 0.65vw #2D2650;
+                    }
+    
+                }
+            }
+    
+            &-logo {
+                bottom: calc(-50% + 19.27vw);
+                right: 0;
+                width: 79.43vw;
+                height: 119.27vw;
+            }
+    
+            &-text {
+                font-size: 3.91vw;
+                font-weight: 700;
+                letter-spacing: 0.26vw;
+            }
         }
     }
 }

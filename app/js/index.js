@@ -25,21 +25,33 @@ import Scrollbar from 'smooth-scrollbar';
 
 const swiperLogo = new Swiper('.swiper__up-inner',  {
     modules: [Navigation],
-    spaceBetween: 64,
-    slidesPerView: 6,
+    spaceBetween: 40,
+    slidesPerView: 3,
     navigation:{
-        nextEl:'.swiper__up-botton-next',
-        prevEl:'.swiper__up-botton-prev',
+        nextEl:'.swiper__up-button-next',
+        prevEl:'.swiper__up-button-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 6,
+        spaceBetween: 64
+      }
+    }
     
   });
 const swiperNews = new Swiper('.swiper__down-inner',  {
     modules: [Navigation],
-    // spaceBetween: 30,
-    // slidesPerView: 6,
+    spaceBetween: 40,
+    slidesPerView: 2,
     navigation:{
-        nextEl:'.swiper__down-botton-next',
-        prevEl:'.swiper__down-botton-prev',
+        nextEl:'.swiper__down-button-next',
+        prevEl:'.swiper__down-button-prev',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
     
   });

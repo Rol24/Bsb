@@ -35,7 +35,7 @@
             overflow: hidden;
             color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
             text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: wrap;
             font-family: Handjet;
             font-size: 25px;
             font-style: normal;
@@ -77,10 +77,13 @@
                 background: rgba(255, 255, 255, 0.30);
                 height: 202px;
                 width: 100%;
+                padding-top: 20px;
+                padding-left: 20px;
+            
 
             }
             ::placeholder{
-                align-self: start;
+                // align-self: start;
             }
             
 
@@ -129,6 +132,7 @@
             font-weight: 400;
             line-height: normal;
             letter-spacing: 0.7px;
+
         }
 
         input {

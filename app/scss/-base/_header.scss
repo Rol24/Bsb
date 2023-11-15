@@ -6,10 +6,21 @@
     background-color: transparent;
     left: 50%;
     transform: translateX(-50%);
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
 
 
+    @media screen and (max-width:1440px) {
+        padding-top: 2.78vw;
+        max-width: 76.39vw;
+
+    }
+
+    @media screen and (max-width:768px) {
+        padding-top: 5.21vw;
+        max-width: 143.23vw;    
+    }
 }
