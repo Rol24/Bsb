@@ -8,6 +8,10 @@
     background-image: url(/assets/images/BG.svg);
     background-size: cover;
 
+    .bsbmobile {
+        display: none;
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;
@@ -45,6 +49,10 @@
             height: 916px;
         }
 
+        .mobile {
+            display: none;
+        }
+
         &-text {
             color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
             font-family: Handjet;
@@ -58,9 +66,9 @@
     }
 
     @media screen and (max-width:1440px) {
-
         height: 62.50vw;
         padding-top: 13.89vw;
+
 
         &__inner {
             gap: 4.10vw;
@@ -93,38 +101,108 @@
             }
         }
     }
-    @media screen and (max-width:768px) {
-        height: 117.19vw;
-        padding-top: 26.04vw;
-    
+
+    // @media screen and (max-width:768px) {
+    //     height: 117.19vw;
+    //     padding-top: 26.04vw;
+
+    //     &__inner {
+    //         gap: 7.68vw;
+
+    //         &-title {
+    //             gap: 2.60vw;
+
+    //             &--bsb {
+    //                 p {
+    //                     font-size: 10.42vw;
+    //                     font-weight: 400;
+    //                     letter-spacing: 0.52vw;
+    //                     -webkit-text-stroke: 0.65vw #2D2650;
+    //                 }
+
+    //             }
+    //         }
+
+    //         &-logo {
+    //             bottom: calc(-50% + 19.27vw);
+    //             /* right: -33px; */
+    //             width: 79.43vw;
+    //             height: 119.27vw;
+    //             left: 39%;
+    //         }
+
+    //         .pc {
+    //             display: none;
+    //         }
+
+    //         .mobile {
+    //             display: block;
+    //             width: 61.5vw;
+    //             height: 98.5vw;
+    //         }
+
+    //         &-text {
+    //             font-size: 3.91vw;
+    //             font-weight: 700;
+    //             letter-spacing: 0.26vw;
+
+    //         }
+    //     }
+    // }
+
+    @media screen and (max-width:576px) {
+        height: 200.51vw;
+        overflow: hidden;
+        padding-top: 55.56vw;
+        background-image: url("/assets/images/mobilebg.svg");
+
         &__inner {
-            gap: 7.68vw;
-    
+            gap: 0;
             &-title {
-                gap: 2.60vw;
-    
+                gap: 0;
+                flex-direction: column;
+                align-items: flex-start;
+
+                &--business{
+                    margin-top: 10;
+                }
+
                 &--bsb {
                     p {
-                        font-size: 10.42vw;
-                        font-weight: 400;
-                        letter-spacing: 0.52vw;
-                        -webkit-text-stroke: 0.65vw #2D2650;
+                        display: none;
                     }
-    
+
+                    .bsbmobile {
+                        display: block;
+                        // width: 51.67vw;
+                        // height: 16.67vw;
+                    }
+
+
                 }
             }
-    
+
             &-logo {
-                bottom: calc(-50% + 19.27vw);
-                right: 0;
-                width: 79.43vw;
-                height: 119.27vw;
+                bottom: 0;
+                left: 22.61vw;
+                width: 77.50vw;
+                height: 79.5vw;
             }
-    
+
+            .pc {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+                width: 79.5vw;
+                height: 81.5vw;
+
+            }
+
             &-text {
-                font-size: 3.91vw;
-                font-weight: 700;
-                letter-spacing: 0.26vw;
+                font-size: 4.62vw;
+                letter-spacing: 0.25vw;
             }
         }
     }

@@ -71,6 +71,7 @@
         }
 
         &-commit {
+            position: relative;
             input {
                 border-radius: 7px;
                 border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
@@ -78,14 +79,34 @@
                 height: 202px;
                 width: 100%;
                 padding-top: 20px;
-                padding-left: 20px;
-            
+                padding-left: 19px;
+                &:focus{
+                    .label{
+                        display: none;
+                    }
+                }
+
+                ::placeholder{
+                    opacity: 0;
+                }
 
             }
-            ::placeholder{
-                // align-self: start;
+
+            label {
+                position: absolute;
+                color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+                text-overflow: ellipsis;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+                top: 20px;
+                left: 20px;
+
             }
-            
+
 
         }
 
@@ -142,4 +163,187 @@
         }
     }
 
+    @media screen and (max-width:1440px) {
+        &__inner {
+            gap: 3.89vw;
+
+            &-title {
+                font-size: 2.08vw;
+                letter-spacing: 0.1vw;
+            }
+
+            &-main {
+                border-radius: 0.49vw;
+                border: 0.21vw solid rgba(255, 255, 255, 0.20);
+                box-shadow: 0px 0.07vw 1.67vw -0.7px rgba(0, 0, 0, 0.10);
+                backdrop-filter: blur(0.69vw);
+                padding: 2.78vw 3.82vw;
+
+            }
+        }
+
+        .main__form {
+            gap: 2.50vw;
+
+            &-desc {
+                font-size: 1.74vw;
+                letter-spacing: 0.085vw;
+            }
+
+            &-fio {
+                input {
+                    border-radius: 0.49vw;
+                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    background: rgba(255, 255, 255, 0.30);
+                    height: 4.03vw;
+                }
+
+            }
+
+            &-num-mail {
+                gap: 2.50vw;
+
+                input {
+                    border-radius: 0.49vw;
+                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    height: 4.03vw;
+                    max-width: 33.47vw;
+                }
+
+            }
+
+            &-commit {
+                textarea {
+                    border-radius: 0.49vw;
+                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    height: 14.03vw;
+                    padding-top: 1.39vw;
+                    padding-left: 1.39vw;
+
+
+                }
+
+
+            }
+
+            &-button {
+                gap: 2.22vw;
+
+                p {
+                    font-size: 0.69vw;
+                    letter-spacing: 0.03vw;
+                    max-width: 11.11vw;
+                }
+
+                button {
+                    padding: 0.69vw 2.78vw;
+                    color: #4A399D;
+                    font-size: 1.74vw;
+                    letter-spacing: 0.085vw;
+                }
+            }
+
+            ::placeholder {
+                font-size: 0.97vw;
+                letter-spacing: 0.055vw;
+
+            }
+
+            input {
+                padding: 1.39vw 0px 1.39vw 1.39vw;
+            }
+        }
+    }
+
+    // @media screen and (max-width:768px) {
+    //     &__inner {
+    //         gap: 7.29vw;
+
+    //         &-title {
+    //             font-size: 3.91vw;
+    //             letter-spacing: 0.2vw;
+    //         }
+
+    //         &-main {
+    //             border-radius: 0.91vw;
+    //             border: 0.39vw solid rgba(255, 255, 255, 0.20);
+    //             box-shadow: 0px 0.13vw 3.13vw -0.13vw rgba(0, 0, 0, 0.10);
+    //             backdrop-filter: blur(1.30vw);
+    //             padding: 5.21vw 7.16vw;
+
+    //         }
+    //     }
+
+    //     .main__form {
+    //         gap: 4.69vw;
+
+    //         &-desc {
+    //             font-size: 3.26vw;
+    //             letter-spacing: 0.16vw;
+    //         }
+
+    //         &-fio {
+    //             input {
+    //                 border-radius: 0.91vw;
+    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+    //                 background: rgba(255, 255, 255, 0.30);
+    //                 height: 7.55vw;
+    //             }
+
+    //         }
+
+    //         &-num-mail {
+    //             gap: 4.69vw;
+
+    //             input {
+    //                 border-radius: 0.91vw;
+    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+    //                 height: 7.55vw;
+    //                 max-width: 62.76vw;
+    //             }
+
+    //         }
+
+    //         &-commit {
+    //             textarea {
+    //                 border-radius: 0.91vw;
+    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+    //                 height: 26.30vw;
+    //                 padding-top: 2.60vw;
+    //                 padding-left: 2.60vw;
+
+
+    //             }
+
+
+    //         }
+
+    //         &-button {
+    //             gap: 4.17vw;
+
+    //             p {
+    //                 font-size: 1.30vw;
+    //                 letter-spacing: 0.07vw;
+    //                 max-width: 20.83vw;
+    //             }
+
+    //             button {
+    //                 padding: 1.30vw 5.21vw;
+    //                 color: #4A399D;
+    //                 font-size: 3.26vw;
+    //                 letter-spacing: 0.16vw;
+    //             }
+    //         }
+
+    //         ::placeholder {
+    //             font-size: 1.82vw;
+    //             letter-spacing: 0.1vw;
+
+    //         }
+
+    //         input {
+    //             padding: 2.60vw 0px 2.60vw 2.60vw;
+    //         }
+    //     }
+    // }
 }

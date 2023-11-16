@@ -83,35 +83,34 @@
             max-height: 49.44vw;
             height: 100%;
             gap: 3.89vw;
-    
+
             &-desr {
                 max-width: 49.17vw;
                 font-size: 2.08vw;
                 letter-spacing: 0.14vw;
             }
-    
-            &-up {
-            }
-    
+
+            &-up {}
+
             &-main {
                 padding: 0 2.08vw;
             }
-    
+
             &-mainnames {
                 height: 40.83vw;
-    
+
                 &:not(:last-child) {
                     border-right: 0.35vw solid #F5F5F5;
-    
-    
+
+
                 }
             }
-    
+
             &-mainbig {
                 width: 19.38vw;
                 height: 16.81vw;
             }
-    
+
             &-mainsmall {
                 font-size: 2.08vw;
                 letter-spacing: 0.14vw;
@@ -120,46 +119,106 @@
             }
         }
     }
-    @media screen and (max-width:768px) {
-        padding-top: 10.42vw;
+
+    // @media screen and (max-width:768px) {
+    //     padding-top: 10.42vw;
+
+    //     &__inner {
+    //         max-height: 92.71vw;
+    //         gap: 7.29vw;
+
+    //         &-desr {
+    //             max-width: 92.19vw;
+    //             font-size: 3.91vw;
+    //             letter-spacing: 0.16vw;
+    //         }
+
+    //         &-up {
+    //         }
+
+    //         &-main {
+    //             padding: 0 3.91vw;
+    //         }
+
+    //         &-mainnames {
+    //             height: 76.56vw;
+
+    //             &:not(:last-child) {
+    //                 border-right: 0.65vw solid #F5F5F5;
+
+
+    //             }
+    //         }
+
+    //         &-mainbig {
+    //             width: 36.33vw;
+    //             height: 31.51vw;
+    //         }
+
+    //         &-mainsmall {
+    //             font-size: 3.91vw;
+    //             letter-spacing: 0.16vw;
+    //             padding-left: 4.56vw;
+    //             padding-top: 34.64vw;
+    //         }
+    //     }
+    // }
+
+    @media screen and (max-width:576px) {
+        // padding-top: 20.51vw;
 
         &__inner {
-            max-height: 92.71vw;
-            gap: 7.29vw;
-    
+            max-height: 182.56vw;
+            height: 100%;
+            gap: 14.36vw;
+
             &-desr {
-                max-width: 92.19vw;
-                font-size: 3.91vw;
-                letter-spacing: 0.16vw;
+                max-width: 78.97vw;
+                width: 100%;
+                font-size: 4.62vw;
+                letter-spacing: 0.26vw;
             }
-    
-            &-up {
-            }
-    
+
+            &-up {}
+
             &-main {
-                padding: 0 3.91vw;
-            }
-    
-            &-mainnames {
-                height: 76.56vw;
-    
-                &:not(:last-child) {
-                    border-right: 0.65vw solid #F5F5F5;
-    
-    
+                // padding: 0 7.69vw;
+                flex-direction: column;
+                .sb{
+                    order: 2;
+                }
+                .ib{
+                    order: 3;
+                }
+                .it{    
+                    order: 1;
                 }
             }
-    
-            &-mainbig {
-                width: 36.33vw;
-                height: 31.51vw;
+
+            &-mainnames {
+                // height: 150.77vw;
+
+                &:not(:last-child) {
+                    border-right: 0.35vw solid #F5F5F5;
+
+
+                }
             }
-    
+
+            &-mainbig {
+                width: 34.87vw;
+                height: 30.26vw;
+                left: 80px;
+                bottom: 70%;
+            }
+
             &-mainsmall {
-                font-size: 3.91vw;
-                letter-spacing: 0.16vw;
-                padding-left: 4.56vw;
-                padding-top: 34.64vw;
+                font-size: 4.62vw;
+                letter-spacing: 0.25vw;
+                padding-left: 53px;
+                padding-top: 15px;
+                // padding-top: 11.28vw;
+                // padding-left: 8.97vw;
             }
         }
     }

@@ -1,4 +1,6 @@
-<svg width="1440" height="206" viewBox="0 0 1440 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1440" height="689" viewBox="0 0 1440 689" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1440 205.281L658.129 94.2142L1440 16.0464V205.281Z" fill="#F5F5F5"/>
 <path d="M0 76.2021L1440 205.19L0 0.600098V76.2021Z" fill="#2D2650"/>
 <path d="M0 0.600098L1440 205.19V98.4269L953.015 136.001L0 0.600098Z" fill="#DFDC01"/>
+<path d="M1440 689.132V205.282L0 76.2021V689.132H1440Z" fill="white"/>
 </svg>

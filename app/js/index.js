@@ -25,7 +25,7 @@ import Scrollbar from 'smooth-scrollbar';
 
 const swiperLogo = new Swiper('.swiper__up-inner',  {
     modules: [Navigation],
-    spaceBetween: 40,
+    spaceBetween: 45,
     slidesPerView: 3,
     navigation:{
         nextEl:'.swiper__up-button-next',
@@ -34,8 +34,12 @@ const swiperLogo = new Swiper('.swiper__up-inner',  {
     breakpoints: {
       768: {
         slidesPerView: 6,
+        spaceBetween: 75
+      },
+      576: {
+        slidesPerView: 2,
         spaceBetween: 64
-      }
+      },
     }
     
   });
@@ -50,6 +54,10 @@ const swiperNews = new Swiper('.swiper__down-inner',  {
     breakpoints: {
       768: {
         slidesPerView: 3,
+        spaceBetween: 30
+      },
+      576: {
+        slidesPerView: 1,
         spaceBetween: 30
       }
     }

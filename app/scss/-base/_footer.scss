@@ -3,6 +3,8 @@
     padding-top: 240px;
     background-image: url(/assets/images/footerbg.svg);
     background-repeat: no-repeat;
+    background-position: top;
+    // background-size: ;
 
     &__inner {
         display: flex;
@@ -11,7 +13,6 @@
         &-up {
             display: flex;
             justify-content: space-between;
-
             ul {
                 color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
                 font-family: Handjet;
@@ -41,6 +42,10 @@
             }
 
         }
+        &-upleft{
+            width: 152px;
+            height: 152px;
+        }
 
         &-middle {
             text-align: center;
@@ -61,6 +66,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+
             &-first {
                 display: flex;
                 flex-direction: column;
@@ -127,4 +133,173 @@
             }
         }
     }
+
+    @media screen and (max-width:1440px) {
+        padding-bottom: 2.78vw;
+        padding-top: 16.67vw;
+        background-size: contain;
+
+        &__inner {
+
+            &-up {
+
+                ul {
+                    font-size: 1.74vw;
+                    letter-spacing: 0.1vw;
+                }
+
+                li {
+                    font-size: 0.97vw;
+                    letter-spacing: 0.04vw;
+
+                    &:not(:last-child) {
+                        margin-bottom: 0.83vw;
+                    }
+
+                    &:first-child {
+                        margin-top: 1.11vw;
+                    }
+                }
+
+            }
+            &-upleft{
+                width: 10.56vw;
+                height: 10.56vw;
+            }
+
+            &-middle {
+                margin: 2.92vw auto;
+            }
+
+
+
+            &-upmiddle {
+                width: 48.96vw;
+                row-gap: 1.67vw;
+            }
+
+            &-upright {
+                gap: 1.11vw;
+
+                &-first {
+                    gap: 0.49vw;
+                }
+
+                &-txt {
+                    font-size: 1.74vw;
+                    letter-spacing: 0.1vw;
+                }
+
+                a {
+                    font-size: 1.39vw;
+                    letter-spacing: 0.07vw;
+                }
+
+                &-second {
+                    font-size: 0.97vw;
+                    letter-spacing: 0.1vw;
+                }
+
+                &-thirdin {
+
+                    gap: 1.04vw;
+                }
+
+            }
+
+            &-down {
+
+
+                &-text {
+                    font-size: 0.97vw;
+                    letter-spacing: 0.4vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // @media screen and (max-width:768px) {
+    //     padding-bottom: 5.21vw;
+    //     padding-top: 31.25vw;
+    //     &__inner {
+
+    //         &-up {
+
+    //             ul {
+    //                 font-size: 3.26vw;
+    //                 letter-spacing: 0.2vw;
+    //             }
+
+    //             li {
+    //                 font-size: 1.82vw;
+    //                 letter-spacing: 0.4vw;
+
+    //                 &:not(:last-child) {
+    //                     margin-bottom: 1.56vw;
+    //                 }
+
+    //                 &:first-child {
+    //                     margin-top: 2.08vw;
+    //                 }
+    //             }
+
+    //         }
+    //         &-upleft{
+    //             width: 19.79vw;
+    //             height: 19.79vw;
+    //         }
+
+    //         &-middle {
+    //             margin: 5.47vw auto;
+    //         }
+
+
+
+    //         &-upmiddle {
+    //             width: 91.80vw;
+    //             row-gap: 3.13vw;
+    //         }
+
+    //         &-upright {
+    //             gap: 2.08vw;
+
+    //             &-first {
+    //                 gap: 0.91vw;
+    //             }
+
+    //             &-txt {
+    //                 font-size: 3.26vw;
+    //                 letter-spacing: 0.16vw;
+                    
+    //             }
+
+    //             a {
+    //                 font-size: 2.60vw;
+    //                 letter-spacing: 0.13vw;
+    //             }
+
+    //             &-second {
+    //                 font-size: 1.82vw;
+    //                 letter-spacing: 0.2vw;
+    //             }
+
+    //             &-thirdin {
+
+    //                 gap: 1.95vw;
+    //             }
+
+    //         }
+
+    //         &-down {
+
+
+    //             &-text {
+    //                 font-size: 14px;
+    //                 letter-spacing: 0.17vw;
+    //                 text-align: center;
+    //             }
+    //         }
+    //     }
+    // }
 }
