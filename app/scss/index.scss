@@ -28,10 +28,12 @@
     max-width: 1130px;
     margin: 0 auto;
     padding: 0 15;
+    // overflow: hidden;
 
     @media screen and (max-width:1400px) {
         max-width: 78.47vw;
         padding: 0 1.04vw;
+        // overflow: hidden;
     }
     // @media screen and (max-width:768px) {
     //     max-width: 147.14vw;

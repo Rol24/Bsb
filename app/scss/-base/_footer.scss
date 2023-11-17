@@ -1,7 +1,7 @@
 .footer {
     padding-bottom: 40px;
     padding-top: 240px;
-    background-image: url(/assets/images/footerbg.svg);
+    background-image: url("/assets/images/footerbg.svg");
     background-repeat: no-repeat;
     background-position: top;
     // background-size: ;
@@ -13,6 +13,7 @@
         &-up {
             display: flex;
             justify-content: space-between;
+
             ul {
                 color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
                 font-family: Handjet;
@@ -42,7 +43,8 @@
             }
 
         }
-        &-upleft{
+
+        &-upleft {
             width: 152px;
             height: 152px;
         }
@@ -162,7 +164,8 @@
                 }
 
             }
-            &-upleft{
+
+            &-upleft {
                 width: 10.56vw;
                 height: 10.56vw;
             }
@@ -219,6 +222,13 @@
         }
     }
 
+    @media screen and (max-width:576px) {
+        background-image: url("/assets/images/footerbgmobile.svg");
+        background-size: contain;
+        padding-top: 46.11vw;
+
+    }
+
     // @media screen and (max-width:768px) {
     //     padding-bottom: 5.21vw;
     //     padding-top: 31.25vw;
@@ -271,7 +281,7 @@
     //             &-txt {
     //                 font-size: 3.26vw;
     //                 letter-spacing: 0.16vw;
-                    
+
     //             }
 
     //             a {

@@ -1,16 +1,31 @@
 .exper {
     background-color: #ffffff;
-    margin-top: 100px;
+    // margin-top: 100px;
 
     &__inner {
+
+        img {
+            width: 116px;
+            height: 116px;
+        }
+
+        &-main {
+            display: flex;
+            gap: 80px;
+            margin: 80px 0;
+        }
+
         &-num {
             display: flex;
-            gap: 268px;
-            margin-top: 80px;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+
+            // margin-top: 80px;
         }
 
         &-textnum {
-            max-width: 303px;
+            // max-width: 303px;
             width: 100%;
 
         }
@@ -35,6 +50,7 @@
             font-weight: 400;
             line-height: normal;
             letter-spacing: 0.9px;
+            // max-width: 280px;
         }
 
         &-numtext {
@@ -47,6 +63,7 @@
         &-text {
             display: flex;
             gap: 32px;
+            margin-top: 100px;
 
 
         }
@@ -75,13 +92,27 @@
         }
     }
 
+
     @media screen and (max-width:1440px) {
-        margin-top: 6.94vw;
+        // margin-top: 6.94vw;
 
         &__inner {
+            img {
+                width: 8.06vw;
+                height: 8.06vw;
+            }
+
+            &-main {
+                display: flex;
+                gap: 5.56vw;
+                margin: 5.56vw 0;
+            }
+
             &-num {
-                gap: 18.61vw;
-                margin-top: 5.56vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.67vw;
+                // margin-top: 80px;
             }
 
             &-textnum {}
@@ -97,6 +128,7 @@
                 font-size: 1.25vw;
                 font-weight: 400;
                 letter-spacing: 0.07vw;
+                // max-width: 19.44vw;
             }
 
 
@@ -185,30 +217,33 @@
 
     @media screen and (max-width:576px) {
 
-        margin: 16.41vw 0;
 
         &__inner {
 
 
-            &-main {
-
-                display: flex;
-                gap: 10.26vw;
-
-            }
-
-            &-num {
-
-                gap: 0;
-                margin-top: 0;
+            &-main{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                gap: 13.89vw;
+                margin: 13.89vw 0;
+            }
+            &-num {
+                display: flex;
+                flex-direction: row;
+                gap: 10vw;
+                // margin-top: 80px;
             }
 
-            &-textnum {}
+            
 
+            &-textnum {
+                width: 100%;
+                width: auto;
+            }
 
+            &-img{
+                flex: 0 0 auto;
+            }
             img {
                 width: 15.38vw;
                 height: 15.38vw;
@@ -217,13 +252,13 @@
             &-textup {
                 font-size: 4.10vw;
                 font-weight: 700;
-                letter-spacing: 0.2vw;
+                letter-spacing: 0.8px;
             }
 
             &-textdown {
                 margin-left: 3.41vw;
                 font-size:4.62vw;
-                letter-spacing: 0.25vw;
+                letter-spacing: 0.8px;
                 // max-width: 232px;
             }
 

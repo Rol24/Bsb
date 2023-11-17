@@ -1,5 +1,6 @@
 .level {
 
+    // margin-top: 200px;
     &__inner {
 
         display: flex;
@@ -53,7 +54,7 @@
             // border: 1px solid rgba(223, 220, 1, 0.50);
             background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
             box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(2.78vw);
             display: inline-block;
             padding: 6px 32px 6px 31px;
             margin-left: 40px;
@@ -67,7 +68,7 @@
     @media screen and (max-width:1440px) {
         &__inner {
 
-            padding: 5.56vw 0;
+            // padding: 5.56vw 0;
 
             &-title {
                 font-size: 2.08vw;
@@ -140,4 +141,48 @@
     //     }
 
     // }
+
+    @media screen and (max-width:576px) {
+        &__inner {
+
+            // padding: 5.56vw 0;
+            margin: 17.78vw 0;
+
+            &-title {
+                font-size: 5vw;
+                letter-spacing: 1.5px;
+            }
+
+            &-main {
+                grid-template-columns: 78.33vw;
+                gap: 3.33vw;
+
+
+                &::after {
+                    width: 19.86vw;
+                    height: 19.86vw;
+                }
+            }
+
+            &-mainlvl {}
+
+            &-maintxt {
+                font-family: Handjet;
+                font-size: 4.44vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 7px;
+                // border: 1px solid rgba(223, 220, 1, 0.50);
+                background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
+                box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
+                backdrop-filter: blur(10px);
+                letter-spacing: 0.8px;
+                padding: 1.67vw 4.72vw;
+                margin-left: 11.11vw;
+                margin-top: -8.33vw;
+            }
+        }
+
+    }
 }

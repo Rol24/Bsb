@@ -72,6 +72,7 @@
 
         &-commit {
             position: relative;
+
             input {
                 border-radius: 7px;
                 border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
@@ -80,13 +81,14 @@
                 width: 100%;
                 padding-top: 20px;
                 padding-left: 19px;
-                &:focus{
-                    .label{
+
+                &:focus {
+                    .label {
                         display: none;
                     }
                 }
 
-                ::placeholder{
+                ::placeholder {
                     opacity: 0;
                 }
 
@@ -124,7 +126,7 @@
                 font-weight: 400;
                 line-height: normal;
                 letter-spacing: 0.5px;
-                max-width: 160px;
+                width: 160px;
             }
 
             button {
@@ -232,7 +234,7 @@
                 p {
                     font-size: 0.69vw;
                     letter-spacing: 0.03vw;
-                    max-width: 11.11vw;
+                    width: 11.11vw;
                 }
 
                 button {
@@ -251,6 +253,186 @@
 
             input {
                 padding: 1.39vw 0px 1.39vw 1.39vw;
+            }
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        margin-bottom: 17.78vw;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            gap: 6.67vw;
+
+            &-title {
+                color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+                font-family: Handjet;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.28vw;
+                text-transform: uppercase;
+            }
+
+            &-main {
+                border-radius: 7px;
+                border: 3px solid rgba(255, 255, 255, 0.20);
+                background: linear-gradient(to bottom right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top right / 50% 50% no-repeat;
+
+                /* Neomorphizm/Glass */
+                box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
+                backdrop-filter: blur(10px);
+
+            }
+
+            .form__btn {
+                text-align: right;
+            }
+        }
+
+        .main__form {
+            display: flex;
+            flex-direction: column;
+            gap: 3.33vw;
+
+            &-desc {
+                overflow: hidden;
+                color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
+                text-overflow: ellipsis;
+                white-space: wrap;
+                font-family: Handjet;
+                font-size: 3.33vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.23vw;
+            }
+
+            &-fio {
+                input {
+                    border-radius: 7px;
+                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    background: rgba(255, 255, 255, 0.30);
+                    height: 11.11vw;
+                    width: 100%;
+                }
+
+            }
+
+            &-num-mail {
+                // display: flex;
+                gap: 3.33vw;
+                flex-direction: column;
+
+                input {
+                    border-radius: 7px;
+                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    background: rgba(255, 255, 255, 0.30);
+                    height: 58px;
+                    max-width: 482px;
+                    width: 100%;
+                }
+
+            }
+
+            &-commit {
+                position: relative;
+
+                input {
+                    border-radius: 7px;
+                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    background: rgba(255, 255, 255, 0.30);
+                    height: 202px;
+                    width: 100%;
+                    padding-top: 20px;
+                    padding-left: 19px;
+
+                    &:focus {
+                        .label {
+                            display: none;
+                        }
+                    }
+
+                    ::placeholder {
+                        opacity: 0;
+                    }
+
+                }
+
+                label {
+                    position: absolute;
+                    color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+                    text-overflow: ellipsis;
+                    font-family: PT Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                    top: 20px;
+                    left: 20px;
+
+                }
+
+
+            }
+
+            &-button {
+                display: flex;
+                flex-direction: column;
+                gap: 3.33vw;
+                justify-content: flex-end;
+
+                p {
+                    color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+                    text-align: right;
+                    font-family: PT Sans;
+                    font-size: 2.78vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.14vw;
+                    width: 82.22vw;
+                    text-align: left;
+                }
+
+                button {
+                    text-align: end;
+                    background: #DFDC01;
+                    display: inline-flex;
+                    padding: 2.78vw 11.11vw;
+                    justify-content: center;
+                    align-items: center;
+                    color: #4A399D;
+                    font-family: Handjet;
+                    font-size: 4.44vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.25px;
+                    width: 39.72vw;
+                }
+            }
+
+            ::placeholder {
+                overflow: hidden;
+                color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+                text-overflow: ellipsis;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+
+            }
+
+            input {
+                display: flex;
+                padding: 20px 0px 20px 20px;
+                align-items: flex-start;
             }
         }
     }
