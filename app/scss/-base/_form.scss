@@ -73,7 +73,7 @@
         &-commit {
             position: relative;
 
-            input {
+            textarea {
                 border-radius: 7px;
                 border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
                 background: rgba(255, 255, 255, 0.30);
@@ -340,7 +340,7 @@
             &-commit {
                 position: relative;
 
-                input {
+                textarea {
                     border-radius: 7px;
                     border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
                     background: rgba(255, 255, 255, 0.30);
