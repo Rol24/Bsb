@@ -159,7 +159,8 @@
     @media screen and (max-width:1440px) {
         padding-bottom: 2.78vw;
         padding-top: 16.67vw;
-        background-size: contain;
+        // background-size: contain;
+        background-size: 100%;
 
         &__inner {
 
@@ -285,6 +286,21 @@
 
         }
 
+        .footer__inner-upright {
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            border-top: 1px solid var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+            border-bottom: 1px solid var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
+            padding: 3.33vw 0px;
+        }
+
+        .footer__inner-upright-first {
+            gap: 6.49vw;
+            text-align: left;
+        }
+
         .footer__inner {
             order: 2;
         }
@@ -294,33 +310,69 @@
             order: 1;
         }
 
+        &__inner-up {
+
+
+            &::after {
+                content: none;
+            }
+        }
+
+        &__inner-down {
+            flex-direction: column;
+            // justify-content: ;
+            align-items: flex-start;
+            gap: 3.33vw;
+            padding-bottom: 6.67vw;
+
+            &-text {
+                font-size: 2.78vw;
+                letter-spacing: 0.14vw;
+                text-align: left;
+            }
+        }
+
+
         &__mobile {
-            gap: 30px;
+            gap: 8.33vw;
             display: flex;
             flex-direction: column;
 
             .box {
+                transition: all 0.4s ease;
+
+
+
+
+
+
 
                 &.active {
                     .label::after {
-                        transform: rotate(0deg);
+                        transform: rotate(360deg);
                         // background-color: #2D2650;
-                        transition: all 0.3s;
+                        transition: all 0.5s ease;
 
                     }
+
+
+                    .content {
+
+                        transition: all 0.4s ease;
+
+                    }
+
                 }
 
 
 
-
-
-
-                margin-bottom:25px;
+                margin-bottom:6.94vw;
                 // &:not(:last-child) {
                 //     // margin-bottom: 12px;
                 // }
 
                 .label {
+                    // transition: all 0.3s;
                     // border-radius: 7px;
                     // background: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
                     color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
@@ -333,7 +385,11 @@
                     position: relative;
                     // padding: 3.33vw 3.89vw;
 
-                    &::after {
+
+                    transition: all 0.4s ease;
+
+
+                    &:after {
                         position: absolute;
                         content: url("/assets/images/footerMobileNext.svg");
                         // width: 8.89vw;
@@ -342,14 +398,18 @@
                         top: 2.56vw;
                         // transform: translateY(-30%);
                         right: 44.67vw;
-                        transition: all 0.3s;
+                        transition: all 0.5s;
                     }
+
+
 
 
 
                 }
 
                 .content {
+
+
                     position: relative;
                     max-height: 0;
                     overflow: hidden;
@@ -359,20 +419,30 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    letter-spacing: 0.25vw;
-                    transition: 0.3;
+
+                    transition: all 0.4s ease-in-out;
 
 
                     ul {
+
+
                         li {
+
                             // position: relative;
+                            display: flex;
+                            align-items: center;
+                            gap: 3.33vw;
+                            margin-top: 2.78vw;
+                            font-size: 3.33vw;
 
                             &::before {
                                 // position: absolute;
-                                content: url("/assets/images/acordPoint.svg");
-                                width: 11.11vw;
-                                height: 11.11vw;
-
+                                content: '';
+                                background-image: url("/assets/images/acordPoint.svg");
+                                width: 8.11vw;
+                                height: 7.11vw;
+                                background-size: 9.11vw 7.11vw;
+                                // margin-top: 10px;
                             }
                         }
                     }

@@ -73,22 +73,43 @@ const swiperNews = new Swiper('.swiper__down-inner', {
 });
 
 const boxes = Array.from(document.querySelectorAll('.box'));
-
 boxes.forEach((box) => {
-  box.addEventListener("click", boxHandler);
-  console.log("box");
+  box.firstElementChild.addEventListener("click", boxHandler);
 });
 
 
 function boxHandler(e) {
   e.preventDefault();
-  let currentBox = e.target.closest('.box');
-  let currentContent = e.target.nextElementSiblng;
+  let currentBox = e.target.parentNode.closest('.box');
+  let currentContent = e.target.nextElementSibling;
   currentBox.classList.toggle("active");
-  if (currentBox.classList.contains("active")){
-    // currentContent.style.maxHeight = currentContent.scrollHeight + "150px";
+  if (currentBox.classList.contains("active")) {
+    currentContent.style.maxHeight = currentContent.scrollHeight + "px";
   } else {
-    // currentContent.style.maxHeight = 0
+    currentContent.style.maxHeight = 0
   }
 };
+
+
+
+const burger = document.querySelector('#burger')
+const openBurger = document.querySelector('#openBurger')
+
+openBurger.addEventListener('click', () => {
+  openBurger.classList.toggle('active')
+  burger.classList.toggle('burger-menu--active')
+})
+
+// let deg = 0;
+
+// openBurger.addEventListener('click', () => {
+//   openBurger.classList.toggle('active')
+//   deg = deg + 45
+//   burger.classList.toggle('burger-menu--active')
+//   if (!openBurger.classList.contains('active')) {
+//     document.querySelector('.header__up-menurigth').style.transform = `rotate(${deg}deg)`;
+//   } else {
+//     document.querySelector('.header__up-menurigth').style.transform = `rotate(${deg}deg)`;
+//   }
+// })
 

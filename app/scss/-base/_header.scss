@@ -8,7 +8,19 @@
     left: 50%;
     transform: translateX(-50%);
 
+    &__up {
+        &-menurigth {
+            transition: all 0.3s ease-in-out;
+            &.active {
+                transform: rotate(45deg);
+                transition: all 0.3s ease-in-out;
+            }
+        } 
+    }
+
     &__inner {
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
 
@@ -25,7 +37,7 @@
 
     @media screen and (max-width:1440px) {
         // padding-top: 2.78vw;
-        max-width: 76.39vw;
+        // max-width: 76.39vw;
 
         .right {
             width: 2.43vw;

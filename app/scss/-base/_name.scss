@@ -21,6 +21,57 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            overflow: hidden;
+
+            &--main {}
+
+            &--block {
+                height: 96px;
+
+                img {
+                    height: 96px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                text-transform: capitalize;
+                animation: change 4s;
+                animation-iteration-count: infinite;
+
+                @keyframes change {
+
+                    // 0%, 12%, 100%{
+                    //     transform: translateY(0);
+                    //   }
+                    //   12%, 33%{
+                    //     transform: translateY(-100%);
+                    //   }
+                    //   34%, 66%{
+                    //     transform: translateY(-200%);
+                    //   }
+                    //   67%, 99%{
+                    //     transform: translateY(-300%);
+                    //   }
+
+                    0%,
+                    25%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    36%,
+                    56% {
+                        transform: translateY(-100%);
+                    }
+
+                    67%,
+                    90% {
+                        transform: translateY(-200%);
+                    }
+
+                }
+
+            }
 
             &--bsb {
                 p {
@@ -75,6 +126,16 @@
 
             &-title {
                 gap: 1.39vw;
+
+                &--block {
+                    height: 6.67vw;
+
+                    img {
+                        height: 6.67vw;
+
+                    }
+
+                }
 
                 &--bsb {
                     p {
@@ -158,12 +219,32 @@
 
         &__inner {
             gap: 0;
+
             &-title {
                 gap: 0;
                 flex-direction: column;
+
+
+
                 align-items: flex-start;
 
-                &--business{
+                &--main {
+                    overflow: hidden;
+                    height: 12.22vw;
+                    margin-bottom: 1.94vw;
+                }
+
+                &--block {
+                    height: 12.22vw;
+                    // animation: none;
+
+                    img {
+                        height: 12.22vw;
+
+                    }
+                }
+
+                &--business {
                     margin-top: 10;
                 }
 

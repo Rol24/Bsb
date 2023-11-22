@@ -19,6 +19,30 @@
             text-transform: uppercase;
         }
 
+        &-mainimg {
+            display: flex;
+
+            .num {
+                color: #DFDC01;
+                font-family: Eboy;
+                font-size: 140px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 7px;
+            }
+
+            .percent {
+                color: #2D2650;
+                font-family: Eboy;
+                font-size: 140px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 7px;
+            }
+        }
+
         &-main {
             display: grid;
             grid-template-columns: 390px 390px;
@@ -36,6 +60,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
         }
 
         &-mainlvl {
@@ -83,6 +108,21 @@
                 &::after {
                     width: 19.86vw;
                     height: 19.86vw;
+                }
+            }
+
+            &-mainimg {
+
+                .num {
+
+                    font-size: 9.72vw;
+                    letter-spacing: 0.49vw;
+                }
+
+                .percent {
+
+                    font-size: 9.72vw;
+                    letter-spacing: 0.49vw;
                 }
             }
 
