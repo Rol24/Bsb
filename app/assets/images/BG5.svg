@@ -1,0 +1,36 @@
+<svg width="1560" height="1020" viewBox="0 0 1560 1020" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_270_521)" filter="url(#filter0_f_270_521)">
+<circle cx="541" cy="551" r="778" fill="url(#paint0_linear_270_521)"/>
+<circle cx="1028" cy="409" r="716" fill="url(#paint1_linear_270_521)"/>
+<circle cx="541" cy="449" r="1338" fill="url(#paint2_radial_270_521)"/>
+<circle cx="360.659" cy="665.938" r="627" transform="rotate(-12 360.659 665.938)" fill="url(#paint3_linear_270_521)"/>
+</g>
+<defs>
+<filter id="filter0_f_270_521" x="0" y="0" width="1560" height="1020" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_270_521"/>
+</filter>
+<linearGradient id="paint0_linear_270_521" x1="-169.383" y1="-26.5937" x2="1288.86" y2="920.041" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DFDC01"/>
+<stop offset="0.703125" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_270_521" x1="1713.26" y1="64.8701" x2="737.102" y2="775.622" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2D2650"/>
+<stop offset="1" stop-color="#2D2650" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint2_radial_270_521" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(541 449) rotate(134.865) scale(1684.18)">
+<stop stop-color="#DFDC01"/>
+<stop offset="0.410521" stop-color="#2D2650" stop-opacity="0.1"/>
+<stop offset="0.649319" stop-color="#DFDC01" stop-opacity="0"/>
+<stop offset="1" stop-color="#DFDC01" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint3_linear_270_521" x1="-221.039" y1="1086.13" x2="2688.11" y2="-312.313" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DFDC01" stop-opacity="0.1"/>
+<stop offset="0.886972" stop-color="#DFDC01" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_270_521">
+<rect width="1440" height="900" fill="white" transform="translate(60 60)"/>
+</clipPath>
+</defs>
+</svg>

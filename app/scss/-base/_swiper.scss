@@ -60,6 +60,10 @@
                 letter-spacing: 1px;
             }
         }
+        &:hover{
+            filter: none;
+            // background-color: #DFDC01;
+        }
     }
 
     .swiper-button {
