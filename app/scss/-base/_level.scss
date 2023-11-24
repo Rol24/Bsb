@@ -48,15 +48,35 @@
       column-gap: 367px;
       position: relative;
 
-      &::after {
+      &-loader {
         position: absolute;
-        content: '';
-        width: 286px;
-        height: 286px;
-        background-image: url(/assets/images/levelanimation.svg);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 286px;
+        height: 286px;
+        background-color: transparent;
+        &::after {
+          position: absolute;
+          content: '';
+          width: 87px;
+          height: 87px;
+          background-color: #f5f5f5;
+          // background-image: url(/assets/images/levelanimation.svg);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        // &::before {
+        //   content: '';
+        //   width: 286px;
+        //   height: 286px;
+        //   top: 50%;
+        //   left: 50%;
+        //   transform: translate(-50%, -50%);
+        //   border: 50px solid red;
+        //   border-radius: 100%;
+        // }
       }
     }
 
@@ -74,7 +94,7 @@
       line-height: normal;
       letter-spacing: 1.25px;
       border-radius: 7px;
-    //   border: 1px solid rgba(223, 220, 1, 0.5);
+      //   border: 1px solid rgba(223, 220, 1, 0.5);
       background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.4) 7.57%, rgba(223, 223, 223, 0.1) 56.52%));
       box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(10px);
@@ -224,11 +244,11 @@
         font-weight: 700;
         line-height: normal;
         border-radius: 7px;
-        background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.40) 7.57%, rgba(223, 223, 223, 0.10) 56.52%));
-        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
+        background: var(--neo-glass-neo-glass-grey, linear-gradient(136deg, rgba(221, 221, 221, 0.4) 7.57%, rgba(223, 223, 223, 0.1) 56.52%));
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10px);
         backdrop-filter: blur(2.78vw);
-        letter-spacing:0.24vw;
+        letter-spacing: 0.24vw;
         padding: 1.67vw 4.72vw;
         margin-left: 11.11vw;
         margin-top: -8.33vw;

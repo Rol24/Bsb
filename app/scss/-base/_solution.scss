@@ -1,6 +1,7 @@
 .solution {
   // padding-top: 80px;
   // height: 100%;
+  overflow: hidden;
   &__inner {
     // max-height: 712px;
     // height: 100%;
@@ -37,51 +38,54 @@
       bottom: 18px;
       transition: all 0.3s ease-in-out;
     }
-    .it {
-      position: relative;
-      &:hover {
-        background-image: url('/assets/images/ITBG.svg');
+
+    @media (hover: hover) and (pointer: fine) {
+      .it {
         position: relative;
-        z-index: 0;
+        &:hover {
+          background-image: url('/assets/images/ITBG.svg');
+          position: relative;
+          z-index: 0;
 
-        .solution__inner-mainsmall {
-          margin-top: 40px;
-          transition: all 0.3s ease-in-out;
-        }
-        .mobile {
-          //   display: block;
-          opacity: 1;
-          visibility: visible;
-          top: 150px;
+          .solution__inner-mainsmall {
+            margin-top: 40px;
+            transition: all 0.3s ease-in-out;
+          }
+          .mobile {
+            //   display: block;
+            opacity: 1;
+            visibility: visible;
+            top: 150px;
 
-          transition: all 0.3s ease-in-out;
-        }
-        &:not(:last-child) {
-          border-right: 5px solid #dfdc01;
-        }
-        .solution-hovereffect {
-          opacity: 1;
-          visibility: visible;
-          //   position: absolute;
-          transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
+          &:not(:last-child) {
+            border-right: 5px solid #dfdc01;
+          }
+          .solution-hovereffect {
+            opacity: 1;
+            visibility: visible;
+            //   position: absolute;
+            transition: all 0.3s ease-in-out;
 
-          .solution__inner-hovereffect {
-            position: relative;
-            .solution__inner-hovereffect--text {
-              //   top: 173px;
-              //   position: absolute;
-              //   right: 70px;
-              //   color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
-              //   font-family: Handjet;
-              //   font-size: 25px;
-              //   font-style: normal;
-              //   font-weight: 700;
-              //   line-height: normal;
-              //   letter-spacing: 1.25px;
-              //   &::after {
-              //     content: url(/assets/images/arrow.svg);
-              //     border-left: 15px solid transparent;
-              //   }
+            .solution__inner-hovereffect {
+              position: relative;
+              .solution__inner-hovereffect--text {
+                //   top: 173px;
+                //   position: absolute;
+                //   right: 70px;
+                //   color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+                //   font-family: Handjet;
+                //   font-size: 25px;
+                //   font-style: normal;
+                //   font-weight: 700;
+                //   line-height: normal;
+                //   letter-spacing: 1.25px;
+                //   &::after {
+                //     content: url(/assets/images/arrow.svg);
+                //     border-left: 15px solid transparent;
+                //   }
+              }
             }
           }
         }
@@ -172,8 +176,8 @@
         line-height: normal;
         letter-spacing: 0.9px;
         margin-top: 22px;
-        position: absolute;
-        top: 300px;
+        // position: absolute;
+        // top: 300px;
         transition: all 0.3s ease-in-out;
       }
     }
@@ -191,6 +195,118 @@
         max-width: 49.17vw;
         font-size: 2.08vw;
         letter-spacing: 0.14vw;
+      }
+      .solution {
+        &-hovereffect {
+          &--text {
+            top: 12.01vw;
+            position: absolute;
+            right: 4.86vw;
+            color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+            font-family: Handjet;
+            font-size: 1.74vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+            &::after {
+              content: url(/assets/images/arrow.svg);
+              border-left: 1.04vw solid transparent;
+            }
+          }
+        }
+
+        .solution-hovereffect {
+          transform: translateX(-4.65vw);
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          width: 29.17vw;
+          bottom: 1.25vw;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .it {
+        position: relative;
+        &:hover {
+          background-image: url('/assets/images/ITBG.svg');
+          position: relative;
+          z-index: 0;
+
+          .solution__inner-mainsmall {
+            margin-top: 2.78vw;
+            transition: all 0.3s ease-in-out;
+          }
+          .mobile {
+            //   display: block;
+            opacity: 1;
+            visibility: visible;
+            top: 10.42vw;
+
+            transition: all 0.3s ease-in-out;
+          }
+          &:not(:last-child) {
+            border-right: 0.35vw solid #dfdc01;
+          }
+          .solution-hovereffect {
+            opacity: 1;
+            visibility: visible;
+            //   position: absolute;
+            transition: all 0.3s ease-in-out;
+
+            .solution__inner-hovereffect {
+              position: relative;
+              .solution__inner-hovereffect--text {
+                //   top: 173px;
+                //   position: absolute;
+                //   right: 70px;
+                //   color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+                //   font-family: Handjet;
+                //   font-size: 25px;
+                //   font-style: normal;
+                //   font-weight: 700;
+                //   line-height: normal;
+                //   letter-spacing: 1.25px;
+                //   &::after {
+                //     content: url(/assets/images/arrow.svg);
+                //     border-left: 15px solid transparent;
+                //   }
+              }
+            }
+          }
+        }
+      }
+      .pc {
+        color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+        font-family: Handjet;
+        font-size: 2.08vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: left;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .mobile {
+        // display: none;
+        opacity: 0;
+        visibility: hidden;
+        text-align: left;
+        color: var(--prime-logo-bs-bcolours-clear-black, #000);
+        font-family: PT Sans;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        margin-top: 1.53vw;
+        // position: absolute;
+        // top: 300px;
+        transition: all 0.3s ease-in-out;
       }
 
       &-up {
@@ -336,7 +452,7 @@
         .pc {
           font-size: 4.62vw;
           letter-spacing: 0.25vw;
-          margin-bottom: 6.06vw;
+          margin-bottom: 0;
           position: relative;
           &::after {
             content: url('/assets/images/arrow.svg');
@@ -349,7 +465,8 @@
         }
 
         .mobile {
-          display: block;
+          opacity: 1;
+          visibility: visible;
           color: #000;
           font-family: PT Sans;
           font-size: 4.1vw;
@@ -358,6 +475,7 @@
           line-height: normal;
           letter-spacing: 0.8px;
           text-align: left;
+          margin-top: 2.78vw;
         }
 
         // padding-top: 11.28vw;

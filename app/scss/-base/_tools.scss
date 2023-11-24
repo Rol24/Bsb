@@ -1,523 +1,615 @@
 .tools {
-    overflow: hidden;
+  overflow: hidden;
 
-    &__inner {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      color: var(--pantone-bsb-pantone-cool-grey, #b1b3b3);
+      font-family: Handjet;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    &-mainup {
+      display: flex;
+      gap: 300px;
+    }
+    &-maindown {
+      display: flex;
+      gap: 300px;
+    }
+
+    &-main {
+      padding-bottom: 80px;
+      // width: 2555px;
+      display: flex;
+      flex-direction: column;
+      gap: 152px;
+      white-space: nowrap;
+      margin-top: 56px;
+
+      &--txtup {
         display: flex;
-        flex-direction: column;
+        gap: 144px;
+        align-items: center;
+        animation: scroll 17s linear infinite;
+        animation-direction: reverse;
 
-        &-title {
-            color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
-            font-family: Handjet;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(calc(-100% - 8%));
+          }
         }
+      }
+      &--txtdown {
+        display: flex;
+        gap: 144px;
+        align-items: center;
+        animation: scroll 17s linear infinite;
+        // animation-direction: reverse;
 
-        &-main {
-            padding-bottom: 80px;
-            // width: 2555px;
-            display: flex;
-            flex-direction: column;
-            gap: 152px;
-            white-space: nowrap;
-            margin-top: 56px;
-
-            &--txt {
-                display: flex;
-                gap: 144px;
-                align-items: center;
-            }
-
-            &--txtdown {
-                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
-                font-family: "Press Start 2P";
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 2.4px;
-                text-transform: uppercase;
-
-                &--bitriks {
-                    color: var(--prime-logo-bs-bcolours-logo-yellow, #DFDC01);
-                    font-family: Press Start 2P;
-                    font-size: 48px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 2.4px;
-                    text-transform: uppercase;
-                }
-            }
-
-            &--txtup {
-                color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
-                font-family: "Press Start 2P";
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 2.4px;
-                text-transform: uppercase;
-
-            }
-
-            &--image {
-                max-width: 99.627px;
-                max-height: 100px;
-                flex-shrink: 0;
-            }
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(calc(-100% - 8%));
+          }
         }
+      }
 
-
-        &-card {
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-            padding: 80px 0;
-            align-items: center;
-
-            &--item {
-                // height: 370px;
-                display: flex;
-                padding: 31px 43.5;
-                // width: 1056px;
-                gap: 40px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            &--image {
-                // width: 288px;
-                // height: 272px;
-                flex-shrink: 0;
-            }
-
-            &--textbtn {
-                max-width: 641px;
-                display: flex;
-                flex-direction: column;
-                gap: 48px;
-            }
-
-            &--text {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-            }
-
-            &--btn {
-                width: 205px;
-                height: 56px;
-                display: inline-flex;
-                padding: 10px 40px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                background: #DFDC01;
-
-                button {
-                    color: var(--prime-logo-bs-bcolours-support-light-purple, #4A399D);
-                    font-family: "Handjet";
-                    font-size: 25px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    letter-spacing: 1.25px;
-                }
-            }
-
-            .txtupmobile {
-                display: none;
-            }
-        }
-    }
-
-    .txtup {
-        color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
-        font-family: Handjet;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    .txtdown {
-        overflow: hidden;
-        color: #2B2A28;
-        text-overflow: ellipsis;
-        white-space: wrap;
-        font-family: PT Sans;
-        font-size: 18px;
+      .black {
+        color: #2b2a28;
+        font-family: 'Press Start 2P';
+        font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+      .transparent {
+        font-family: Press Start 2P;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+      .blue {
+        color: #2d2650;
+        font-family: Press Start 2P;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+      .yellowbord {
+        font-family: Press Start 2P;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      &--image {
+        max-width: 99.627px;
+        max-height: 100px;
+        flex-shrink: 0;
+      }
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      padding: 80px 0;
+      align-items: center;
+
+      &--item {
+        // height: 370px;
+        display: flex;
+        padding: 31px 43.5;
+        // width: 1056px;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--image {
+        // width: 288px;
+        // height: 272px;
+        flex-shrink: 0;
+      }
+
+      &--textbtn {
+        max-width: 641px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      &--text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &--btn {
+        width: 205px;
+        height: 56px;
+
+        button {
+          transition: all 0.15s ease-in-out;
+        }
+
+        position: relative;
+        &::after {
+          position: absolute;
+          content: '';
+          background-image: url(/assets/images/Psevdo.svg);
+          background-repeat: no-repeat;
+          top: 0;
+          left: 0;
+          // bottom: -17px;
+          // right: -20px;
+          width: 205px;
+          height: 56px;
+          z-index: -1;
+        }
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            button {
+              margin-top: -18px;
+              margin-left: -18px;
+              transition: all 0.15s ease-in-out;
+            }
+            //   background-color: #2d2650;
+          }
+        }
+
+        button {
+          color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
+          font-family: 'Handjet';
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.25px;
+          width: 205px;
+          height: 56px;
+          display: inline-flex;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: #dfdc01;
+        }
+      }
+
+      .txtupmobile {
+        display: none;
+      }
+    }
+  }
+
+  .txtup {
+    color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+    font-family: Handjet;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .txtdown {
+    overflow: hidden;
+    color: #2b2a28;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__inner {
+      &-title {
+        font-size: 2.08vw;
+        letter-spacing: 0.1vw;
+      }
+
+      &-main {
+        padding-bottom: 5.56vw;
+        width: 177.43vw;
+        gap: 10.56vw;
+        margin-top: 3.89vw;
+
+        &--txt {
+          gap: 10vw;
+        }
+
+        &--txtdown {
+          font-size: 3.33vw;
+          letter-spacing: 0.18vw;
+
+          &--bitriks {
+            font-size: 3.33vw;
+            letter-spacing: 0.18vw;
+          }
+        }
+
+        &--txtup {
+          font-size: 3.33vw;
+          letter-spacing: 2.4px;
+        }
+
+        &--image {
+          max-width: 6.88vw;
+          max-height: 6.94vw;
+        }
+      }
+
+      &-card {
+        gap: 3.33vw;
+        padding: 5.56vw 0;
+
+        &--item {
+          // height: 25.69vw;
+          // width: 73.33vw;
+          gap: 2.78vw;
+        }
+
+        &--image {
+          img {
+            width: 20vw;
+            height: 18.89vw;
+          }
+        }
+
+        &--textbtn {
+          // width: 44.51vw;
+          gap: 3.33vw;
+        }
+
+        &--text {
+          gap: 1.67vw;
+        }
+
+        &--btn {
+          width: 14.24vw;
+          height: 3.89vw;
+          margin: 0;
+          transition: all 0.15s ease-in-out;
+
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '';
+            background-image: url(/assets/images/Psevdo.svg);
+            background-repeat: no-repeat;
+            background-size: 14.24vw;
+            width: 14.24vw;
+            height: 3.89vw;
+            z-index: -1;
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              button {
+                margin-top: -1.25vw;
+                margin-left: -1.25vw;
+              }
+
+            }
+          }
+          button {
+            color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
+            font-family: 'Handjet';
+            font-size: 1.74vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+            width: 14.24vw;
+            height: 3.89vw;
+            display: inline-flex;
+            padding: 0.69vw 2.78vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.69vw;
+            background: #dfdc01;
+          }
+        }
+      }
+
+      .txtup {
+        font-size: 2.78vw;
+        letter-spacing: 0.14vw;
+      }
+
+      .txtdown {
+        font-size: 1.25vw;
+        letter-spacing: 0.07vw;
+      }
+    }
+  }
+
+  // @media screen and (max-width:768px) {
+  //     &__inner {
+
+  //         &-title {
+  //             font-size: 3.91vw;
+  //             letter-spacing: 0.20vw;
+  //         }
+
+  //         &-main {
+  //             padding-bottom: 10.42vw;
+  //             width: 332.68vw;
+  //             gap: 19.79vw;
+  //             margin-top: 7.29vw;
+
+  //             &--txt {
+  //                 gap: 18.75vw;
+  //             }
+
+  //             &--txtdown {
+  //                 font-size: 6.25vw;
+  //                 letter-spacing: 0.32vw;
+
+  //                 &--bitriks {
+  //                     font-size: 6.25vw;
+  //                     letter-spacing: 0.32vw;
+  //                 }
+  //             }
+
+  //             &--txtup {
+  //                 font-size: 6.25vw;
+  //                 letter-spacing: 0.32vw;
+
+  //             }
+
+  //             &--image {
+  //                 max-width: 12.89vw;
+  //                 max-height: 13.02vw;
+  //             }
+  //         }
+
+  //         &-card {
+  //             gap: 6.25vw;
+  //             padding: 10.42vw 0;
+
+  //             &--item {
+  //                 height: 48.18vw;
+  //                 width: 137.50vw;
+  //                 gap: 5.21vw;
+  //             }
+
+  //             &--image {
+  //                 width: 37.50vw;
+  //                 height: 35.42vw;
+  //             }
+
+  //             &--textbtn {
+  //                 width: 641px;
+  //                 gap: 48px;
+  //             }
+
+  //             &--text {
+  //                 gap: 24px;
+  //             }
+
+  //             &--btn {
+  //                 width: 205px;
+  //                 height: 56px;
+  //                 padding: 10px 40px;
+  //                 gap: 10px;
+
+  //                 button {
+  //                     font-size: 25px;
+  //                     font-weight: 700;
+  //                     letter-spacing: 1.25px;
+  //                 }
+  //             }
+  //         }
+  //     }
+
+  //     .txtup {
+  //         font-size: 40px;
+  //         font-weight: 900;
+  //         letter-spacing: 2px;
+  //     }
+
+  //     .txtdown {
+  //         font-size: 18px;
+  //         letter-spacing: 0.9px;
+  //     }
+  // }
+  @media screen and (max-width: 576px) {
+    &__inner {
+      &-title {
+        font-size: 5vw;
         letter-spacing: 0.9px;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-    }
+      }
 
-    @media screen and (max-width:1440px) {
+      &-main {
+        margin-bottom: 17.78vw;
+        // width: 2555px;
+        display: flex;
+        flex-direction: column;
+        gap: 3.33vw;
+        white-space: nowrap;
+        margin-top: 6.67vw;
+        padding: 3.33vw 0;
 
-        &__inner {
-
-            &-title {
-                font-size: 2.08vw;
-                letter-spacing: 0.1vw;
-            }
-
-            &-main {
-                padding-bottom: 5.56vw;
-                width: 177.43vw;
-                gap: 10.56vw;
-                margin-top: 3.89vw;
-
-                &--txt {
-                    gap: 10vw;
-                }
-
-                &--txtdown {
-                    font-size: 3.33vw;
-                    letter-spacing: 0.18vw;
-
-                    &--bitriks {
-                        font-size: 3.33vw;
-                        letter-spacing: 0.18vw;
-                    }
-                }
-
-                &--txtup {
-                    font-size: 3.33vw;
-                    letter-spacing: 2.4px;
-
-                }
-
-                &--image {
-                    max-width: 6.88vw;
-                    max-height: 6.94vw;
-                }
-            }
-
-            &-card {
-                gap: 3.33vw;
-                padding: 5.56vw 0;
-
-                &--item {
-                    // height: 25.69vw;
-                    // width: 73.33vw;
-                    gap: 2.78vw;
-                }
-
-                &--image {
-                    img {
-                        width: 20vw;
-                        height: 18.89vw;
-                    }
-                }
-
-                &--textbtn {
-                    // width: 44.51vw;
-                    gap: 3.33vw;
-                }
-
-                &--text {
-                    gap: 1.67vw;
-                }
-
-                &--btn {
-                    width: 14.24vw;
-                    height: 3.89vw;
-                    padding: 0.69vw 2.78vw;
-                    gap: 0.69vw;
-
-                    button {
-                        font-size: 1.74vw;
-                        letter-spacing: 0.09vw;
-                    }
-                }
-            }
-
-            .txtup {
-                font-size: 2.78vw;
-                letter-spacing: 0.14vw;
-            }
-
-            .txtdown {
-                font-size: 1.25vw;
-                letter-spacing: 0.07vw;
-            }
+        &--txt {
+          display: flex;
+          gap: 21.11vw;
+          align-items: center;
         }
 
-    }
+        &--txtdown {
+          color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+          font-family: 'Press Start 2P';
+          font-size: 5vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.9px;
+          text-transform: uppercase;
 
-    // @media screen and (max-width:768px) {
-    //     &__inner {
-
-    //         &-title {
-    //             font-size: 3.91vw;
-    //             letter-spacing: 0.20vw;
-    //         }
-
-    //         &-main {
-    //             padding-bottom: 10.42vw;
-    //             width: 332.68vw;
-    //             gap: 19.79vw;
-    //             margin-top: 7.29vw;
-
-    //             &--txt {
-    //                 gap: 18.75vw;
-    //             }
-
-    //             &--txtdown {
-    //                 font-size: 6.25vw;
-    //                 letter-spacing: 0.32vw;
-
-    //                 &--bitriks {
-    //                     font-size: 6.25vw;
-    //                     letter-spacing: 0.32vw;
-    //                 }
-    //             }
-
-    //             &--txtup {
-    //                 font-size: 6.25vw;
-    //                 letter-spacing: 0.32vw;
-
-    //             }
-
-    //             &--image {
-    //                 max-width: 12.89vw;
-    //                 max-height: 13.02vw;
-    //             }
-    //         }
-
-    //         &-card {
-    //             gap: 6.25vw;
-    //             padding: 10.42vw 0;
-
-    //             &--item {
-    //                 height: 48.18vw;
-    //                 width: 137.50vw;
-    //                 gap: 5.21vw;
-    //             }
-
-    //             &--image {
-    //                 width: 37.50vw;
-    //                 height: 35.42vw;
-    //             }
-
-    //             &--textbtn {
-    //                 width: 641px;
-    //                 gap: 48px;
-    //             }
-
-    //             &--text {
-    //                 gap: 24px;
-    //             }
-
-    //             &--btn {
-    //                 width: 205px;
-    //                 height: 56px;
-    //                 padding: 10px 40px;
-    //                 gap: 10px;
-
-    //                 button {
-    //                     font-size: 25px;
-    //                     font-weight: 700;
-    //                     letter-spacing: 1.25px;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     .txtup {
-    //         font-size: 40px;
-    //         font-weight: 900;
-    //         letter-spacing: 2px;
-    //     }
-
-    //     .txtdown {
-    //         font-size: 18px;
-    //         letter-spacing: 0.9px;
-    //     }
-    // }
-    @media screen and (max-width:576px) {
-
-        &__inner {
-
-            &-title {
-                font-size: 5vw;
-                letter-spacing: 0.9px;
-            }
-
-            &-main {
-                margin-bottom: 17.78vw;
-                // width: 2555px;
-                display: flex;
-                flex-direction: column;
-                gap: 3.33vw;
-                white-space: nowrap;
-                margin-top: 6.67vw;
-                padding: 3.33vw 0;
-
-                &--txt {
-                    display: flex;
-                    gap: 21.11vw;
-                    align-items: center;
-                }
-
-                &--txtdown {
-                    color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
-                    font-family: "Press Start 2P";
-                    font-size: 5vw;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.9px;
-                    text-transform: uppercase;
-
-                    &--bitriks {
-                        color: var(--prime-logo-bs-bcolours-logo-yellow, #DFDC01);
-                        font-family: Press Start 2P;
-                        font-size: 48px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        letter-spacing: 2.4px;
-                        text-transform: uppercase;
-                    }
-                }
-
-                &--txtup {
-                    color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
-                    font-family: "Press Start 2P";
-                    font-size: 5vw;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.9px;
-                    text-transform: uppercase;
-
-                }
-
-                &--image {
-                    img {
-
-                        max-width: 99.627px;
-                        max-height: 100px;
-                    }
-
-                    flex-shrink: 0;
-                }
-            }
-
-            &-card {
-                display: flex;
-                flex-direction: column;
-                gap: 11.11vw;
-                padding: 80px 0;
-                align-items: center;
-
-                &--item {
-                    height: auto;
-                    display: flex;
-                    flex-direction: column;
-                    // width: 1056px;
-                    gap: 6.67vw;
-                    // margin: 30;
-                    padding: 0;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                img {
-                    width: 26.39vw;
-                    height: 26.39vw;
-                }
-
-                &--image {
-                    flex-shrink: 0;
-                    display: flex;
-                    gap: 11.11vw;
-                    order: 1;
-                }
-
-                &--textbtn {
-                    // width: 641px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 6.67vw;
-                    order: 2;
-                }
-
-                &--text {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 24px;
-                }
-
-                &--btn {
-                    width: 205px;
-                    height: 56px;
-                    display: inline-flex;
-                    padding: 10px 40px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    background: #DFDC01;
-
-                    button {
-                        color: var(--prime-logo-bs-bcolours-support-light-purple, #4A399D);
-                        font-family: "Handjet";
-                        font-size: 25px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        letter-spacing: 1.25px;
-                    }
-                }
-
-                .txtup {
-                    display: none;
-                }
-
-                .txtupmobile {
-                    display: block;
-                    color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
-                    /* TITLE/BigTitle-20-Black(MOB) */
-                    font-family: Handjet;
-                    font-size: 5.56vw;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: normal;
-                    letter-spacing: 0.28vw;
-                    text-transform: uppercase;
-
-                }
-
-                .txtdown {
-                    overflow: hidden;
-                    color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2B2A28);
-                    text-overflow: ellipsis;
-                    white-space: wrap;
-                    font-family: PT Sans;
-                    font-size: 4.44vw;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.25vw;
-                    -webkit-line-clamp: 7;
-                    -webkit-box-orient: vertical;
-                }
-            }
-
+          &--bitriks {
+            color: var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+            font-family: Press Start 2P;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+          }
         }
 
+        &--txtup {
+          color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+          font-family: 'Press Start 2P';
+          font-size: 5vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.9px;
+          text-transform: uppercase;
+        }
 
+        &--image {
+          img {
+            max-width: 99.627px;
+            max-height: 100px;
+          }
+
+          flex-shrink: 0;
+        }
+      }
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 11.11vw;
+        padding: 80px 0;
+        align-items: center;
+
+        &--item {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          // width: 1056px;
+          gap: 6.67vw;
+          // margin: 30;
+          padding: 0;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          width: 26.39vw;
+          height: 26.39vw;
+        }
+
+        &--image {
+          flex-shrink: 0;
+          display: flex;
+          gap: 11.11vw;
+          order: 1;
+        }
+
+        &--textbtn {
+          // width: 641px;
+          display: flex;
+          flex-direction: column;
+          gap: 6.67vw;
+          order: 2;
+        }
+
+        &--text {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        &--btn {
+          width: 205px;
+          height: 56px;
+          display: inline-flex;
+          padding: 10px 40px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: #dfdc01;
+
+          button {
+            color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
+            font-family: 'Handjet';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+          }
+        }
+
+        .txtup {
+          display: none;
+        }
+
+        .txtupmobile {
+          display: block;
+          color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+          /* TITLE/BigTitle-20-Black(MOB) */
+          font-family: Handjet;
+          font-size: 5.56vw;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          letter-spacing: 0.28vw;
+          text-transform: uppercase;
+        }
+
+        .txtdown {
+          overflow: hidden;
+          color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+          text-overflow: ellipsis;
+          white-space: wrap;
+          font-family: PT Sans;
+          font-size: 4.44vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.25vw;
+          -webkit-line-clamp: 7;
+          -webkit-box-orient: vertical;
+        }
+      }
     }
+  }
 }
