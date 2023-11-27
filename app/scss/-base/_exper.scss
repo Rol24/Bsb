@@ -8,6 +8,26 @@
       z-index: 1;
       opacity: 0;
 
+      &:not(:last-child) {
+        &::after {
+          background: linear-gradient(90deg, #dfdc01 30%, #dfdc01 80%);
+          width: 0%;
+          animation-name: num;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+          animation-delay: 2.5s;
+        }
+      }
+
+      @keyframes num {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
       &--one {
         animation: 1s show;
         animation-delay: 2s;
@@ -70,20 +90,7 @@
         .exper__inner-img {
           &::after {
             background: linear-gradient(90deg, #dfdc01 30%, #dfdc01 80%);
-            width: 0%;
-            animation-name: num;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
             animation-delay: 2.5s;
-
-            @keyframes num {
-              0% {
-                width: 0%;
-              }
-              100% {
-                width: 100%;
-              }
-            }
           }
         }
       }
@@ -92,20 +99,15 @@
         .exper__inner-img {
           &::after {
             background: linear-gradient(90deg, #2d2650 30%, #f5f5f5 90%);
-            width: 0%;
-            animation-name: num;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
             animation-delay: 3.5s;
+          }
+        }
+      }
 
-            @keyframes num {
-              0% {
-                width: 0%;
-              }
-              100% {
-                width: 100%;
-              }
-            }
+      &:last-child {
+        .exper__inner-img {
+          &::after {
+            display: none;
           }
         }
       }
@@ -348,10 +350,35 @@
         margin: 13.89vw 0;
       }
 
+      &-img {
+        flex: 0 0 auto;
+        width: auto;
+
+        &:not(:last-child) {
+          &::after {
+            height: 0%;
+            width: 5px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        @keyframes num {
+          0% {
+            height: 0%;
+          }
+          100% {
+            height: 100%;
+          }
+        }
+      }
+
       &-num {
         display: flex;
         flex-direction: row;
         gap: 10vw;
+
         // margin: 13.89vw 0;
         &:nth-child(1) {
           .exper__inner-img {
@@ -375,21 +402,6 @@
         width: 100%;
         margin-bottom: 13.89vw;
         width: auto;
-      }
-
-      &-img {
-        flex: 0 0 auto;
-        width: auto;
-
-        &:not(:last-child) {
-          &::after {
-            width: 5px;
-            height: 100%;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-        }
       }
 
       img {

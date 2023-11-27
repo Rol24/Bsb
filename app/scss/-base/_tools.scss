@@ -18,11 +18,11 @@
 
     &-mainup {
       display: flex;
-      gap: 300px;
+      // gap: 300px;
     }
     &-maindown {
       display: flex;
-      gap: 300px;
+      // gap: 300px;
     }
 
     &-main {
@@ -40,13 +40,17 @@
         align-items: center;
         animation: scroll 17s linear infinite;
         animation-direction: reverse;
+        p {
+          font-size: 48px;
+        }
 
         @keyframes scroll {
           from {
             transform: translateX(0);
           }
           to {
-            transform: translateX(calc(-100% - 8%));
+            // transform: translateX(calc(-100% - 8%));
+            transform: translateX(-100);
           }
         }
       }
@@ -56,13 +60,16 @@
         align-items: center;
         animation: scroll 17s linear infinite;
         // animation-direction: reverse;
+        p {
+          font-size: 48px;
+        }
 
         @keyframes scroll {
           from {
             transform: translateX(0);
           }
           to {
-            transform: translateX(calc(-100% - 8%));
+            transform: translateX(-100%);
           }
         }
       }
@@ -70,7 +77,7 @@
       .black {
         color: #2b2a28;
         font-family: 'Press Start 2P';
-        font-size: 48px;
+        // font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -78,8 +85,10 @@
         text-transform: uppercase;
       }
       .transparent {
-        font-family: Press Start 2P;
-        font-size: 48px;
+        color: white;
+        -webkit-text-stroke: 2px #2d2650;
+        font-family: 'Press Start 2P';
+        // font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -88,8 +97,8 @@
       }
       .blue {
         color: #2d2650;
-        font-family: Press Start 2P;
-        font-size: 48px;
+        font-family: 'Press Start 2P';
+        // font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -97,8 +106,20 @@
         text-transform: uppercase;
       }
       .yellowbord {
-        font-family: Press Start 2P;
-        font-size: 48px;
+        font-family: 'Press Start 2P';
+        // font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px #dfdc01;
+      }
+      .yellow {
+        color: var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+        /* DECOR/CloudText */
+        font-family: 'Press Start 2P';
+        // font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -106,8 +127,8 @@
         text-transform: uppercase;
       }
 
-      &--image {
-        max-width: 99.627px;
+      img {
+        max-width: 100.627px;
         max-height: 100px;
         flex-shrink: 0;
       }
@@ -153,7 +174,7 @@
         width: 205px;
         height: 56px;
 
-        button {
+        span {
           transition: all 0.15s ease-in-out;
         }
 
@@ -161,10 +182,11 @@
         &::after {
           position: absolute;
           content: '';
-          background-image: url(/assets/images/Psevdo.svg);
+          background-image: url('/assets/images/Psevdo.svg');
           background-repeat: no-repeat;
-          top: 0;
-          left: 0;
+          top: 5px;
+          left: 10px;
+
           // bottom: -17px;
           // right: -20px;
           width: 205px;
@@ -173,7 +195,7 @@
         }
         @media (hover: hover) and (pointer: fine) {
           &:hover {
-            button {
+            span {
               margin-top: -18px;
               margin-left: -18px;
               transition: all 0.15s ease-in-out;
@@ -182,7 +204,7 @@
           }
         }
 
-        button {
+        span {
           color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
           font-family: 'Handjet';
           font-size: 25px;
@@ -252,8 +274,10 @@
         }
 
         &--txtdown {
-          font-size: 3.33vw;
-          letter-spacing: 0.18vw;
+          p {
+            font-size: 3.33vw;
+            letter-spacing: 0.18vw;
+          }
 
           &--bitriks {
             font-size: 3.33vw;
@@ -262,12 +286,29 @@
         }
 
         &--txtup {
-          font-size: 3.33vw;
-          letter-spacing: 2.4px;
+          p {
+            font-size: 3.33vw;
+            letter-spacing: 2.4px;
+          }
+
+          @keyframes scroll {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-100%);
+            }
+          }
+        }
+        .transparent {
+          -webkit-text-stroke: 1px #2d2650;
+        }
+        .yellowbord {
+          -webkit-text-stroke: 1px #dfdc01;
         }
 
-        &--image {
-          max-width: 6.88vw;
+        img {
+          max-width: 6.94vw;
           max-height: 6.94vw;
         }
       }
@@ -299,8 +340,10 @@
         }
 
         &--btn {
-          width: 14.24vw;
-          height: 3.89vw;
+          // width: 14.24vw;
+          // height: 3.89vw;
+          width: 13.24vw;
+          height: 2.89vw;
           margin: 0;
           transition: all 0.15s ease-in-out;
 
@@ -312,19 +355,21 @@
             background-repeat: no-repeat;
             background-size: 14.24vw;
             width: 14.24vw;
+            left: 0;
+            width: 14.24vw;
             height: 3.89vw;
             z-index: -1;
+            top: 0.35vw;
           }
           @media (hover: hover) and (pointer: fine) {
             &:hover {
-              button {
-                margin-top: -1.25vw;
-                margin-left: -1.25vw;
+              span {
+                margin-top: -0.65vw;
+                margin-left: -0.6vw;
               }
-
             }
           }
-          button {
+          span {
             color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
             font-family: 'Handjet';
             font-size: 1.74vw;
@@ -470,19 +515,10 @@
         }
 
         &--txtdown {
-          color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
-          font-family: 'Press Start 2P';
-          font-size: 5vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: 0.9px;
-          text-transform: uppercase;
-
           &--bitriks {
             color: var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
             font-family: Press Start 2P;
-            font-size: 48px;
+            font-size: 15vw;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -492,14 +528,28 @@
         }
 
         &--txtup {
-          color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
-          font-family: 'Press Start 2P';
-          font-size: 5vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: 0.9px;
-          text-transform: uppercase;
+          p {
+            color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+            font-family: 'Press Start 2P';
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+          }
+        }
+        &--txtdown {
+          p {
+            color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+            font-family: 'Press Start 2P';
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+          }
         }
 
         &--image {

@@ -75,12 +75,14 @@
         letter-spacing: 1px;
       }
     }
-    &:hover {
-      img {
-        filter: none;
-      }
-      .swiper-slide-up-name {
-        color: #dfdc01;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        img {
+          filter: none;
+        }
+        .swiper-slide-up-name {
+          color: #dfdc01;
+        }
       }
 
       // background-color: #DFDC01;
@@ -170,7 +172,6 @@
           &-all {
             font-family: Handjet;
             font-size: 1.39vw;
-
           }
         }
       }
@@ -436,24 +437,26 @@
           }
         }
       }
-      &:hover {
-        &::before {
-          display: block;
-        }
-        &::after {
-          //   display: block;
-          opacity: 1;
-          visibility: visible;
-          animation-delay: 0.9s;
-          animation-play-state: paused;
-          animation-play-state: running;
-        }
-        background-size: 150%;
-        // transform: scale(1.5);
-        // background-image: url("./assets/swiper/PhotoBoxMobile.svg");
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          &::before {
+            display: block;
+          }
+          &::after {
+            //   display: block;
+            opacity: 1;
+            visibility: visible;
+            animation-delay: 0.9s;
+            animation-play-state: paused;
+            animation-play-state: running;
+          }
+          background-size: 150%;
+          // transform: scale(1.5);
+          // background-image: url("./assets/swiper/PhotoBoxMobile.svg");
 
-        // background-position: left;
-        transition: all 0.9s ease-in-out;
+          // background-position: left;
+          transition: all 0.9s ease-in-out;
+        }
       }
     }
   }
@@ -512,6 +515,12 @@
         border: 5px solid var(--prime-logo-bs-bcolours-almost-white, #f5f5f5);
         border-radius: 14px;
         padding: 1.39vw 2.08vw;
+        // &::after {
+        //   background-size: 5.65vw 5.44vw;
+        //   background-repeat: no-repeat;
+        //   right: 1.18vw;
+        //   top: 1.39vw;
+        // }
       }
     }
 

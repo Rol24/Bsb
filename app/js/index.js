@@ -22,7 +22,6 @@ import Scrollbar from 'smooth-scrollbar';
 
 //// ================================ Code ======================================
 
-
 const swiperLogo = new Swiper('.swiper__up-inner', {
   modules: [Navigation],
   spaceBetween: 45,
@@ -34,22 +33,21 @@ const swiperLogo = new Swiper('.swiper__up-inner', {
   breakpoints: {
     768: {
       slidesPerView: 4,
-      spaceBetween: 75
+      spaceBetween: 75,
     },
     920: {
       slidesPerView: 5,
-      spaceBetween: 64
+      spaceBetween: 64,
     },
     576: {
       slidesPerView: 3,
-      spaceBetween: 64
+      spaceBetween: 64,
     },
     1024: {
       slidesPerView: 6,
-      spaceBetween: 64
+      spaceBetween: 64,
     },
-  }
-
+  },
 });
 const swiperNews = new Swiper('.swiper__down-inner', {
   modules: [Navigation],
@@ -62,43 +60,57 @@ const swiperNews = new Swiper('.swiper__down-inner', {
   breakpoints: {
     768: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     576: {
       slidesPerView: 2,
-      spaceBetween: 30
-    }
-  }
-
+      spaceBetween: 30,
+    },
+  },
 });
 
 const boxes = Array.from(document.querySelectorAll('.box'));
 boxes.forEach((box) => {
-  box.firstElementChild.addEventListener("click", boxHandler);
+  box.firstElementChild.addEventListener('click', boxHandler);
 });
-
 
 function boxHandler(e) {
   e.preventDefault();
   let currentBox = e.target.parentNode.closest('.box');
   let currentContent = e.target.nextElementSibling;
-  currentBox.classList.toggle("active");
-  if (currentBox.classList.contains("active")) {
-    currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+  currentBox.classList.toggle('active');
+  if (currentBox.classList.contains('active')) {
+    currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
   } else {
-    currentContent.style.maxHeight = 0
+    currentContent.style.maxHeight = 0;
   }
-};
+}
 
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    }
+  });
 
+}
 
-const burger = document.querySelector('#burger')
-const openBurger = document.querySelector('#openBurger')
+let elements = document.querySelectorAll('.element-animation');
+
+let options = { threshold: [0.1] };
+let observer = new IntersectionObserver(onEntry, options);
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
+const burger = document.querySelector('#burger');
+const openBurger = document.querySelector('#openBurger');
 
 openBurger.addEventListener('click', () => {
-  openBurger.classList.toggle('active')
-  burger.classList.toggle('burger-menu--active')
-})
+  openBurger.classList.toggle('active');
+  burger.classList.toggle('burger-menu--active');
+});
 
 // let deg = 0;
 
@@ -112,4 +124,3 @@ openBurger.addEventListener('click', () => {
 //     document.querySelector('.header__up-menurigth').style.transform = `rotate(${deg}deg)`;
 //   }
 // })
-

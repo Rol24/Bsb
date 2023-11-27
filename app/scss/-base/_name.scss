@@ -1,6 +1,6 @@
 .name {
   background-size: 130%;
-  height:900px;
+  height: 900px;
   //   filter: blur(33.46666717529297px);
   position: relative;
   //   height: 900px;
@@ -34,7 +34,6 @@
       background-repeat: no-repeat;
       // background-size: cover;
       background-position: center;
-
     }
 
     65% {
@@ -42,30 +41,24 @@
       background-repeat: no-repeat;
       // background-size: cover;
       background-position: center;
-
     }
     75% {
       background-image: url('/assets/images/BG5.svg');
       background-repeat: no-repeat;
       // background-size: cover;
       background-position: center;
-
     }
     95% {
       background-image: url('/assets/images/BG6.svg');
       background-repeat: no-repeat;
       // background-size: cover;
       background-position: center;
-
-
     }
     100% {
       background-image: url('/assets/images/BG.svg');
       background-repeat: no-repeat;
       // background-size: cover;
       background-position: center;
-
-
     }
   }
 
@@ -269,7 +262,34 @@
     height: 177.78vw;
     overflow: hidden;
     padding-top: 37.78vw;
-    background-image: url('/assets/images/mobilebg.svg');
+    background-image: url('/assets/images/mobileBG.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: back 15s infinite; /* IE 10+, Fx 29+ */
+    @keyframes back {
+      10% {
+        background-image: url('/assets/images/mobileBG.svg');
+      }
+      25% {
+        background-image: url('/assets/images/mobileBG2.svg');
+      }
+      45% {
+        background-image: url('/assets/images/mobileBG3.svg');
+      }
+
+      65% {
+        background-image: url('/assets/images/mobileBG4.svg');
+      }
+      75% {
+        background-image: url('/assets/images/mobileBG5.svg');
+      }
+      95% {
+        background-image: url('/assets/images/mobileBG6.svg');
+      }
+      100% {
+        background-image: url('/assets/images/mobileBG.svg');
+      }
+    }
 
     &__inner {
       gap: 0;
