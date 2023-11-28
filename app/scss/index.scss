@@ -22,43 +22,33 @@
 /* ================================ Global Modifications ================================ */
 @import './mods/**/*.scss';
 
-
 .container {
-    width: 100%;
-    max-width: 1130px;
-    margin: 0 auto;
-    padding: 0 15;
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15;
+  // overflow: hidden;
+
+  @media screen and (max-width: 1400px) {
+    max-width: 78.47vw;
+    padding: 0 1.04vw;
     // overflow: hidden;
+  }
 
-    @media screen and (max-width:1400px) {
-        max-width: 78.47vw;
-        padding: 0 1.04vw;
-        // overflow: hidden;
-    }
-
-    // @media screen and (max-width:768px) {
-    //     max-width: 147.14vw;
-    //     padding: 0 1.95vw;
-    //     overflow: hidden;
-    // }
-    @media screen and (max-width:576px) {
-        max-width: 313.89vw;
-        padding: 0 4.17vw;
-        // overflow: hidden;
-    }
-
+  // @media screen and (max-width:768px) {
+  //     max-width: 147.14vw;
+  //     padding: 0 1.95vw;
+  //     overflow: hidden;
+  // }
+  @media screen and (max-width: 576px) {
+    max-width: 313.89vw;
+    padding: 0 4.17vw;
+    // overflow: hidden;
+  }
 }
 
-.burger-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('/assets/images/BG.png');
 
-    &--active {
-        display: block;
-    }
+
+.bodyHidden{
+    overflow: hidden;
 }

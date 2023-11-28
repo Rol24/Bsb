@@ -1,531 +1,557 @@
 .form {
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        gap: 56px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 
-        &-title {
-            color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
-            font-family: Handjet;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        &-main {
-            border-radius: 7px;
-            border: 3px solid rgba(255, 255, 255, 0.20);
-            background: linear-gradient(to bottom right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top right / 50% 50% no-repeat;
-            box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
-            backdrop-filter: blur(10px);
-            padding: 40px 55px;
-
-        }
+    &-title {
+      color: var(--pantone-bsb-pantone-cool-grey, #b1b3b3);
+      font-family: Handjet;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
 
-    .main__form {
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
+    &-main {
+      border-radius: 7px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(to bottom right, #fff 0%, rgba(255, 255, 255, 0) 50%) bottom right / 50% 50% no-repeat,
+        linear-gradient(to bottom left, #fff 0%, rgba(255, 255, 255, 0) 50%) bottom left / 50% 50% no-repeat,
+        linear-gradient(to top left, #fff 0%, rgba(255, 255, 255, 0) 50%) top left / 50% 50% no-repeat,
+        linear-gradient(to top right, #fff 0%, rgba(255, 255, 255, 0) 50%) top right / 50% 50% no-repeat;
+      box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 40px 55px;
+    }
+  }
 
-        &-desc {
-            overflow: hidden;
-            color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
-            text-overflow: ellipsis;
-            white-space: wrap;
-            font-family: Handjet;
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 1.25px;
-        }
+  .main__form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
 
-        &-fio {
-            input {
-                border-radius: 7px;
-                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                background: rgba(255, 255, 255, 0.30);
-                height: 58px;
-                width: 100%;
-            }
+    &-desc {
+      overflow: hidden;
+      color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+      text-overflow: ellipsis;
+      white-space: wrap;
+      font-family: Handjet;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.25px;
+    }
 
-        }
+    &-fio {
+      input {
+        border-radius: 7px;
+        border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+        background: rgba(255, 255, 255, 0.3);
+        height: 58px;
+        width: 100%;
+      }
+    }
 
-        &-num-mail {
-            display: flex;
-            gap: 36px;
+    &-num-mail {
+      display: flex;
+      gap: 36px;
 
-            input {
-                border-radius: 7px;
-                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                background: rgba(255, 255, 255, 0.30);
-                height: 58px;
-                max-width: 482px;
-                width: 100%;
-            }
+      input {
+        border-radius: 7px;
+        border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+        background: rgba(255, 255, 255, 0.3);
+        height: 58px;
+        max-width: 482px;
+        width: 100%;
+      }
+    }
 
-        }
+    &-commit {
+      position: relative;
 
-        &-commit {
-            position: relative;
+      textarea {
+        border-radius: 7px;
+        border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+        background: rgba(255, 255, 255, 0.3);
+        height: 202px;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 19px;
 
-            textarea {
-                border-radius: 7px;
-                border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                background: rgba(255, 255, 255, 0.30);
-                height: 202px;
-                width: 100%;
-                padding-top: 20px;
-                padding-left: 19px;
-
-                &:focus {
-                    .label {
-                        display: none;
-                    }
-                }
-
-                ::placeholder {
-                    opacity: 0;
-                }
-
-            }
-
-            label {
-                position: absolute;
-                color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
-                text-overflow: ellipsis;
-                font-family: PT Sans;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.7px;
-                top: 20px;
-                left: 20px;
-
-            }
-
-
-        }
-
-        &-button {
-            display: flex;
-            gap: 32px;
-            justify-content: flex-end;
-
-            p {
-                color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                text-align: right;
-                font-family: PT Sans;
-                font-size: 10px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.5px;
-                width: 160px;
-            }
-
-            button {
-                background: #DFDC01;
-                display: inline-flex;
-                padding: 10px 40px;
-                justify-content: center;
-                align-items: center;
-                color: #4A399D;
-                font-family: Handjet;
-                font-size: 25px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 1.25px;
-            }
+        &:focus {
+          .label {
+            display: none;
+          }
         }
 
         ::placeholder {
-            overflow: hidden;
-            color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
-            text-overflow: ellipsis;
-            font-family: PT Sans;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.7px;
+          opacity: 0;
+        }
+      }
+
+      label {
+        position: absolute;
+        color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+        text-overflow: ellipsis;
+        font-family: PT Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        top: 20px;
+        left: 20px;
+      }
+    }
+
+    &-button {
+      display: flex;
+      gap: 32px;
+      justify-content: flex-end;
+
+      p {
+        color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+        text-align: right;
+        font-family: PT Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        width: 160px;
+      }
+
+      span {
+        background: #dfdc01;
+        display: inline-flex;
+        padding: 10px 40px;
+        justify-content: center;
+        align-items: center;
+        color: #4a399d;
+        font-family: Handjet;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.25px;
+        transition: all 0.15s ease-in-out;
+
+        width: 100%;
+      }
+      .form__btn {
+        position: relative;
+        width: 189px;
+        height: 56px;
+        &::after {
+          position: absolute;
+          content: '';
+          background-image: url('/assets/images/Psevdo.svg');
+          background-repeat: no-repeat;
+          top: 5px;
+          left: 0px;
+
+          // bottom: -17px;
+          // right: -20px;
+          width: 100%;
+          height: 48px;
+          z-index: -1;
+          background-size: contain;
 
         }
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            span {
+              margin-top: -18px;
+              margin-left: -18px;
+              transition: all 0.15s ease-in-out;
+              border: 1px solid var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
+              background: var(--prime-logo-bs-bcolours-soft-light-yellow, #ebe965);
+            }
+            //   background-color: #2d2650;
+          }
+        }
+      }
+    }
+
+    ::placeholder {
+      overflow: hidden;
+      color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+      text-overflow: ellipsis;
+      font-family: PT Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.7px;
+    }
+
+    input {
+      display: flex;
+      padding: 20px 0px 20px 20px;
+      align-items: flex-start;
+      caret-color: #dfdc01;
+    }
+    input:hover {
+      //   border-radius: 30px;
+      border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+      background: rgba(255, 255, 255, 0.8);
+    }
+    textarea:hover {
+      border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__inner {
+      gap: 3.89vw;
+
+      &-title {
+        font-size: 2.08vw;
+        letter-spacing: 0.1vw;
+      }
+
+      &-main {
+        border-radius: 0.49vw;
+        border: 0.21vw solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0.07vw 1.67vw -0.7px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.69vw);
+        padding: 2.78vw 3.82vw;
+      }
+    }
+
+    .main__form {
+      gap: 2.5vw;
+
+      &-desc {
+        font-size: 1.74vw;
+        letter-spacing: 0.085vw;
+      }
+
+      &-fio {
+        input {
+          border-radius: 0.49vw;
+          border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          background: rgba(255, 255, 255, 0.3);
+          height: 4.03vw;
+        }
+      }
+
+      &-num-mail {
+        gap: 2.5vw;
 
         input {
-            display: flex;
-            padding: 20px 0px 20px 20px;
-            align-items: flex-start;
+          border-radius: 0.49vw;
+          border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          height: 4.03vw;
+          max-width: 33.47vw;
         }
+      }
+
+      &-commit {
+        textarea {
+          border-radius: 0.49vw;
+          border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          height: 14.03vw;
+          padding-top: 1.39vw;
+          padding-left: 1.39vw;
+        }
+      }
+
+      &-button {
+        gap: 2.22vw;
+
+        p {
+          font-size: 0.69vw;
+          letter-spacing: 0.03vw;
+          width: 11.11vw;
+        }
+
+        button {
+          padding: 0.69vw 2.78vw;
+          color: #4a399d;
+          font-size: 1.74vw;
+          letter-spacing: 0.085vw;
+        }
+      }
+
+      ::placeholder {
+        font-size: 0.97vw;
+        letter-spacing: 0.055vw;
+      }
+
+      input {
+        padding: 1.39vw 0px 1.39vw 1.39vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 17.78vw;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 6.67vw;
+
+      &-title {
+        color: var(--pantone-bsb-pantone-cool-grey, #b1b3b3);
+        font-family: Handjet;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.28vw;
+        text-transform: uppercase;
+      }
+
+      &-main {
+        border-radius: 7px;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(to bottom right, #fff 0%, rgba(255, 255, 255, 0) 50%) bottom right / 50% 50% no-repeat,
+          linear-gradient(to bottom left, #fff 0%, rgba(255, 255, 255, 0) 50%) bottom left / 50% 50% no-repeat,
+          linear-gradient(to top left, #fff 0%, rgba(255, 255, 255, 0) 50%) top left / 50% 50% no-repeat,
+          linear-gradient(to top right, #fff 0%, rgba(255, 255, 255, 0) 50%) top right / 50% 50% no-repeat;
+
+        /* Neomorphizm/Glass */
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+      }
+
+      .form__btn {
+        text-align: right;
+      }
     }
 
-    @media screen and (max-width:1440px) {
-        &__inner {
-            gap: 3.89vw;
+    .main__form {
+      display: flex;
+      flex-direction: column;
+      gap: 3.33vw;
 
-            &-title {
-                font-size: 2.08vw;
-                letter-spacing: 0.1vw;
+      &-desc {
+        overflow: hidden;
+        color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+        text-overflow: ellipsis;
+        white-space: wrap;
+        font-family: Handjet;
+        font-size: 3.33vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.23vw;
+      }
+
+      &-fio {
+        input {
+          border-radius: 7px;
+          border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          background: rgba(255, 255, 255, 0.3);
+          height: 11.11vw;
+          width: 100%;
+        }
+      }
+
+      &-num-mail {
+        // display: flex;
+        gap: 3.33vw;
+        flex-direction: column;
+
+        input {
+          border-radius: 7px;
+          border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          background: rgba(255, 255, 255, 0.3);
+          height: 58px;
+          max-width: 482px;
+          width: 100%;
+        }
+      }
+
+      &-commit {
+        position: relative;
+
+        textarea {
+          border-radius: 7px;
+          border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          background: rgba(255, 255, 255, 0.3);
+          height: 202px;
+          width: 100%;
+          padding-top: 20px;
+          padding-left: 19px;
+
+          &:focus {
+            .label {
+              display: none;
             }
+          }
 
-            &-main {
-                border-radius: 0.49vw;
-                border: 0.21vw solid rgba(255, 255, 255, 0.20);
-                box-shadow: 0px 0.07vw 1.67vw -0.7px rgba(0, 0, 0, 0.10);
-                backdrop-filter: blur(0.69vw);
-                padding: 2.78vw 3.82vw;
-
-            }
+          ::placeholder {
+            opacity: 0;
+          }
         }
 
-        .main__form {
-            gap: 2.50vw;
-
-            &-desc {
-                font-size: 1.74vw;
-                letter-spacing: 0.085vw;
-            }
-
-            &-fio {
-                input {
-                    border-radius: 0.49vw;
-                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    background: rgba(255, 255, 255, 0.30);
-                    height: 4.03vw;
-                }
-
-            }
-
-            &-num-mail {
-                gap: 2.50vw;
-
-                input {
-                    border-radius: 0.49vw;
-                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    height: 4.03vw;
-                    max-width: 33.47vw;
-                }
-
-            }
-
-            &-commit {
-                textarea {
-                    border-radius: 0.49vw;
-                    border: 0.14vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    height: 14.03vw;
-                    padding-top: 1.39vw;
-                    padding-left: 1.39vw;
-
-
-                }
-
-
-            }
-
-            &-button {
-                gap: 2.22vw;
-
-                p {
-                    font-size: 0.69vw;
-                    letter-spacing: 0.03vw;
-                    width: 11.11vw;
-                }
-
-                button {
-                    padding: 0.69vw 2.78vw;
-                    color: #4A399D;
-                    font-size: 1.74vw;
-                    letter-spacing: 0.085vw;
-                }
-            }
-
-            ::placeholder {
-                font-size: 0.97vw;
-                letter-spacing: 0.055vw;
-
-            }
-
-            input {
-                padding: 1.39vw 0px 1.39vw 1.39vw;
-            }
+        label {
+          position: absolute;
+          color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+          text-overflow: ellipsis;
+          font-family: PT Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.7px;
+          top: 20px;
+          left: 20px;
         }
+      }
+
+      &-button {
+        display: flex;
+        flex-direction: column;
+        gap: 3.33vw;
+        justify-content: flex-end;
+
+        p {
+          color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+          text-align: right;
+          font-family: PT Sans;
+          font-size: 2.78vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.14vw;
+          width: 82.22vw;
+          text-align: left;
+        }
+
+        button {
+          text-align: end;
+          background: #dfdc01;
+          display: inline-flex;
+          padding: 2.78vw 11.11vw;
+          justify-content: center;
+          align-items: center;
+          color: #4a399d;
+          font-family: Handjet;
+          font-size: 4.44vw;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.25px;
+          width: 39.72vw;
+        }
+      }
+
+      ::placeholder {
+        overflow: hidden;
+        color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+        text-overflow: ellipsis;
+        font-family: PT Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
+      }
+
+      input {
+        display: flex;
+        padding: 20px 0px 20px 20px;
+        align-items: flex-start;
+      }
     }
+  }
 
-    @media screen and (max-width:576px) {
-        margin-bottom: 17.78vw;
+  // @media screen and (max-width:768px) {
+  //     &__inner {
+  //         gap: 7.29vw;
 
-        &__inner {
-            display: flex;
-            flex-direction: column;
-            gap: 6.67vw;
+  //         &-title {
+  //             font-size: 3.91vw;
+  //             letter-spacing: 0.2vw;
+  //         }
 
-            &-title {
-                color: var(--pantone-bsb-pantone-cool-grey, #B1B3B3);
-                font-family: Handjet;
-                font-size: 5vw;
-                font-style: normal;
-                font-weight: 900;
-                line-height: normal;
-                letter-spacing: 0.28vw;
-                text-transform: uppercase;
-            }
+  //         &-main {
+  //             border-radius: 0.91vw;
+  //             border: 0.39vw solid rgba(255, 255, 255, 0.20);
+  //             box-shadow: 0px 0.13vw 3.13vw -0.13vw rgba(0, 0, 0, 0.10);
+  //             backdrop-filter: blur(1.30vw);
+  //             padding: 5.21vw 7.16vw;
 
-            &-main {
-                border-radius: 7px;
-                border: 3px solid rgba(255, 255, 255, 0.20);
-                background: linear-gradient(to bottom right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, rgba(255, 255, 255, 0.00) 50%) top right / 50% 50% no-repeat;
+  //         }
+  //     }
 
-                /* Neomorphizm/Glass */
-                box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.10);
-                backdrop-filter: blur(10px);
+  //     .main__form {
+  //         gap: 4.69vw;
 
-            }
+  //         &-desc {
+  //             font-size: 3.26vw;
+  //             letter-spacing: 0.16vw;
+  //         }
 
-            .form__btn {
-                text-align: right;
-            }
-        }
+  //         &-fio {
+  //             input {
+  //                 border-radius: 0.91vw;
+  //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+  //                 background: rgba(255, 255, 255, 0.30);
+  //                 height: 7.55vw;
+  //             }
 
-        .main__form {
-            display: flex;
-            flex-direction: column;
-            gap: 3.33vw;
+  //         }
 
-            &-desc {
-                overflow: hidden;
-                color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2D2650);
-                text-overflow: ellipsis;
-                white-space: wrap;
-                font-family: Handjet;
-                font-size: 3.33vw;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 0.23vw;
-            }
+  //         &-num-mail {
+  //             gap: 4.69vw;
 
-            &-fio {
-                input {
-                    border-radius: 7px;
-                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    background: rgba(255, 255, 255, 0.30);
-                    height: 11.11vw;
-                    width: 100%;
-                }
+  //             input {
+  //                 border-radius: 0.91vw;
+  //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+  //                 height: 7.55vw;
+  //                 max-width: 62.76vw;
+  //             }
 
-            }
+  //         }
 
-            &-num-mail {
-                // display: flex;
-                gap: 3.33vw;
-                flex-direction: column;
+  //         &-commit {
+  //             textarea {
+  //                 border-radius: 0.91vw;
+  //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
+  //                 height: 26.30vw;
+  //                 padding-top: 2.60vw;
+  //                 padding-left: 2.60vw;
 
-                input {
-                    border-radius: 7px;
-                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    background: rgba(255, 255, 255, 0.30);
-                    height: 58px;
-                    max-width: 482px;
-                    width: 100%;
-                }
+  //             }
 
-            }
+  //         }
 
-            &-commit {
-                position: relative;
+  //         &-button {
+  //             gap: 4.17vw;
 
-                textarea {
-                    border-radius: 7px;
-                    border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    background: rgba(255, 255, 255, 0.30);
-                    height: 202px;
-                    width: 100%;
-                    padding-top: 20px;
-                    padding-left: 19px;
+  //             p {
+  //                 font-size: 1.30vw;
+  //                 letter-spacing: 0.07vw;
+  //                 max-width: 20.83vw;
+  //             }
 
-                    &:focus {
-                        .label {
-                            display: none;
-                        }
-                    }
+  //             button {
+  //                 padding: 1.30vw 5.21vw;
+  //                 color: #4A399D;
+  //                 font-size: 3.26vw;
+  //                 letter-spacing: 0.16vw;
+  //             }
+  //         }
 
-                    ::placeholder {
-                        opacity: 0;
-                    }
+  //         ::placeholder {
+  //             font-size: 1.82vw;
+  //             letter-spacing: 0.1vw;
 
-                }
+  //         }
 
-                label {
-                    position: absolute;
-                    color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
-                    text-overflow: ellipsis;
-                    font-family: PT Sans;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.7px;
-                    top: 20px;
-                    left: 20px;
-
-                }
-
-
-            }
-
-            &-button {
-                display: flex;
-                flex-direction: column;
-                gap: 3.33vw;
-                justify-content: flex-end;
-
-                p {
-                    color: var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-                    text-align: right;
-                    font-family: PT Sans;
-                    font-size: 2.78vw;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.14vw;
-                    width: 82.22vw;
-                    text-align: left;
-                }
-
-                button {
-                    text-align: end;
-                    background: #DFDC01;
-                    display: inline-flex;
-                    padding: 2.78vw 11.11vw;
-                    justify-content: center;
-                    align-items: center;
-                    color: #4A399D;
-                    font-family: Handjet;
-                    font-size: 4.44vw;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    letter-spacing: 1.25px;
-                    width: 39.72vw;
-                }
-            }
-
-            ::placeholder {
-                overflow: hidden;
-                color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
-                text-overflow: ellipsis;
-                font-family: PT Sans;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.7px;
-
-            }
-
-            input {
-                display: flex;
-                padding: 20px 0px 20px 20px;
-                align-items: flex-start;
-            }
-        }
-    }
-
-    // @media screen and (max-width:768px) {
-    //     &__inner {
-    //         gap: 7.29vw;
-
-    //         &-title {
-    //             font-size: 3.91vw;
-    //             letter-spacing: 0.2vw;
-    //         }
-
-    //         &-main {
-    //             border-radius: 0.91vw;
-    //             border: 0.39vw solid rgba(255, 255, 255, 0.20);
-    //             box-shadow: 0px 0.13vw 3.13vw -0.13vw rgba(0, 0, 0, 0.10);
-    //             backdrop-filter: blur(1.30vw);
-    //             padding: 5.21vw 7.16vw;
-
-    //         }
-    //     }
-
-    //     .main__form {
-    //         gap: 4.69vw;
-
-    //         &-desc {
-    //             font-size: 3.26vw;
-    //             letter-spacing: 0.16vw;
-    //         }
-
-    //         &-fio {
-    //             input {
-    //                 border-radius: 0.91vw;
-    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-    //                 background: rgba(255, 255, 255, 0.30);
-    //                 height: 7.55vw;
-    //             }
-
-    //         }
-
-    //         &-num-mail {
-    //             gap: 4.69vw;
-
-    //             input {
-    //                 border-radius: 0.91vw;
-    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-    //                 height: 7.55vw;
-    //                 max-width: 62.76vw;
-    //             }
-
-    //         }
-
-    //         &-commit {
-    //             textarea {
-    //                 border-radius: 0.91vw;
-    //                 border: 0.26vw solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
-    //                 height: 26.30vw;
-    //                 padding-top: 2.60vw;
-    //                 padding-left: 2.60vw;
-
-
-    //             }
-
-
-    //         }
-
-    //         &-button {
-    //             gap: 4.17vw;
-
-    //             p {
-    //                 font-size: 1.30vw;
-    //                 letter-spacing: 0.07vw;
-    //                 max-width: 20.83vw;
-    //             }
-
-    //             button {
-    //                 padding: 1.30vw 5.21vw;
-    //                 color: #4A399D;
-    //                 font-size: 3.26vw;
-    //                 letter-spacing: 0.16vw;
-    //             }
-    //         }
-
-    //         ::placeholder {
-    //             font-size: 1.82vw;
-    //             letter-spacing: 0.1vw;
-
-    //         }
-
-    //         input {
-    //             padding: 2.60vw 0px 2.60vw 2.60vw;
-    //         }
-    //     }
-    // }
+  //         input {
+  //             padding: 2.60vw 0px 2.60vw 2.60vw;
+  //         }
+  //     }
+  // }
 }

@@ -106,11 +106,19 @@ for (let elm of elements) {
 
 const burger = document.querySelector('#burger');
 const openBurger = document.querySelector('#openBurger');
+const burgerBody = document.getElementsByTagName('body')
+const burgerMenu = document.querySelector(".burger-menu")
+
 
 openBurger.addEventListener('click', () => {
   openBurger.classList.toggle('active');
   burger.classList.toggle('burger-menu--active');
 });
+
+if (burger.classList.contains(".burger-menu-active")){
+  console.log(burger);
+  burgerBody.classList.add(".bodyHidden");
+}
 
 // let deg = 0;
 

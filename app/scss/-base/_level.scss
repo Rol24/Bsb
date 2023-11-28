@@ -1,5 +1,6 @@
 .level {
   // margin-top: 200px;
+  overflow: hidden;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -166,12 +167,12 @@
       }
     }
     .element-show {
-      .level__inner-main-loader{
-        &::after{
+      .level__inner-main-loader {
+        &::after {
           animation: prixClipFix 1s linear;
           animation-fill-mode: forwards;
         }
-        &::before{
+        &::before {
           animation: prixClipFix 1s linear;
           animation-fill-mode: forwards;
           animation-delay: 0.2s;
@@ -228,6 +229,34 @@
         &::after {
           width: 19.86vw;
           height: 19.86vw;
+        }
+
+        &-loader {
+          &-square {
+            width: 6.04vw;
+            height: 6.04vw;
+          }
+
+          &::after {
+            width: 19.86vw;
+            height: 19.86vw;
+            border: 2.78vw solid rgba(#f5f5f5, 0.2);
+
+            // animation: prixClipFix 2s linear;
+            // animation-fill-mode: forwards;
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 19.86vw;
+            height: 19.86vw;
+            border: 2.78vw solid #f5f5f5;
+
+            // animation: prixClipFix 2s linear;
+            // animation-fill-mode: forwards;
+            // animation-delay: 0.5s;
+          }
         }
       }
 
@@ -314,6 +343,36 @@
         &::after {
           width: 19.86vw;
           height: 19.86vw;
+        }
+        &-loader {
+          &-square {
+            width: 24.17vw;
+            height: 24.17vw;
+            transform: translate(100%,-10%);
+          }
+
+          &::after {
+            width: 79.44vw;
+            height: 79.44vw;
+            border: 15.78vw solid rgba(#f5f5f5, 0.2);
+            transform: translate(0%, -40%);
+
+            // animation: prixClipFix 2s linear;
+            // animation-fill-mode: forwards;
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 79.44vw;
+            height: 79.44vw;
+            border: 15.78vw solid #f5f5f5;
+            transform: translate(0%, -40%);
+
+            // animation: prixClipFix 2s linear;
+            // animation-fill-mode: forwards;
+            // animation-delay: 0.5s;
+          }
         }
       }
 

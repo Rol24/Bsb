@@ -199,6 +199,8 @@
               margin-top: -18px;
               margin-left: -18px;
               transition: all 0.15s ease-in-out;
+              border: 1px solid var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
+              background: var(--prime-logo-bs-bcolours-soft-light-yellow, #ebe965);
             }
             //   background-color: #2d2650;
           }
@@ -500,10 +502,9 @@
 
       &-main {
         margin-bottom: 17.78vw;
-        // width: 2555px;
         display: flex;
         flex-direction: column;
-        gap: 3.33vw;
+        gap: 15.33vw;
         white-space: nowrap;
         margin-top: 6.67vw;
         padding: 3.33vw 0;
@@ -617,10 +618,10 @@
           gap: 10px;
           background: #dfdc01;
 
-          button {
+          span {
             color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
             font-family: 'Handjet';
-            font-size: 25px;
+            font-size: 4.44vw;
             font-style: normal;
             font-weight: 700;
             line-height: normal;

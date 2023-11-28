@@ -335,6 +335,10 @@
   background-position: center;
   background-size: contain;
 
+  .swiper {
+    width: 100%;
+  }
+
   &-inner {
     overflow: hidden;
 
@@ -403,7 +407,9 @@
       position: relative;
 
       &::before {
-        display: none;
+        // display: none;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 0;
         left: 0;
@@ -415,6 +421,7 @@
         /* background-color: greenyellow; */
         z-index: -1;
         height: 270px;
+        transition: all 0.9s ease-in-out;
       }
       &::after {
         position: absolute;
@@ -427,7 +434,9 @@
         top: 20px;
         opacity: 0;
         visibility: hidden;
-        animation: 3s linear infinite rot;
+
+
+        transition: all 0.9s ease-in-out;
         @keyframes rot {
           0% {
             transform: rotate(0deg);
@@ -440,15 +449,23 @@
       @media (hover: hover) and (pointer: fine) {
         &:hover {
           &::before {
-            display: block;
+            // display: block;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.9s ease-in-out;
           }
           &::after {
             //   display: block;
             opacity: 1;
             visibility: visible;
-            animation-delay: 0.9s;
-            animation-play-state: paused;
-            animation-play-state: running;
+
+            // animation-play-state: paused;
+            animation: 3s linear infinite rot;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+            // animation-fill-mode: forwards;
+            // animation-play-state: running;
+            transition: all 0.9s ease-in-out;
           }
           background-size: 150%;
           // transform: scale(1.5);
