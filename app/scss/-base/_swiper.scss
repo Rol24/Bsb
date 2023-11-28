@@ -538,6 +538,11 @@
         //   right: 1.18vw;
         //   top: 1.39vw;
         // }
+        &::after{
+          width: 4.65vw;
+          height: 4.44vw;
+          background-size: cover;
+        }
       }
     }
 

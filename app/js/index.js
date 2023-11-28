@@ -60,11 +60,11 @@ const swiperNews = new Swiper('.swiper__down-inner', {
   breakpoints: {
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     576: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   },
 });
@@ -92,7 +92,6 @@ function onEntry(entry) {
       change.target.classList.add('element-show');
     }
   });
-
 }
 
 let elements = document.querySelectorAll('.element-animation');
@@ -106,19 +105,18 @@ for (let elm of elements) {
 
 const burger = document.querySelector('#burger');
 const openBurger = document.querySelector('#openBurger');
-const burgerBody = document.getElementsByTagName('body')
-const burgerMenu = document.querySelector(".burger-menu")
-
+const burgerBody = document.body;
+const burgerMenu = document.querySelector('.burger-menu');
 
 openBurger.addEventListener('click', () => {
   openBurger.classList.toggle('active');
   burger.classList.toggle('burger-menu--active');
+  if (burgerMenu.classList.contains('burger-menu--active')) {
+    burgerBody.classList.add('bodyHidden');
+  } else {
+    burgerBody.classList.remove('bodyHidden');
+  }
 });
-
-if (burger.classList.contains(".burger-menu-active")){
-  console.log(burger);
-  burgerBody.classList.add(".bodyHidden");
-}
 
 // let deg = 0;
 
