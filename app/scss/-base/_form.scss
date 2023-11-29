@@ -139,34 +139,35 @@
         line-height: normal;
         letter-spacing: 1.25px;
         transition: all 0.15s ease-in-out;
-
-        width: 100%;
+        // display: block;;
+        margin-left: 10px;
+        // width: 100%;
+        // opacity: 0;
       }
       .form__btn {
         position: relative;
         width: 189px;
         height: 56px;
+        right: 0;
+        // text-align: end;
+
         &::after {
           position: absolute;
           content: '';
-          background-image: url('/assets/images/Psevdo.svg');
+          background-image: url(/assets/images/Psevdo.svg);
           background-repeat: no-repeat;
-          top: 5px;
-          left: 0px;
-
-          // bottom: -17px;
-          // right: -20px;
-          width: 100%;
-          height: 48px;
+          top: 8px;
+          right: 0px;
+          width: 175px;
+          height: 45px;
           z-index: -1;
           background-size: contain;
-
         }
         @media (hover: hover) and (pointer: fine) {
           &:hover {
             span {
-              margin-top: -18px;
-              margin-left: -18px;
+              margin-top: -16px;
+              margin-left: -12px;
               transition: all 0.15s ease-in-out;
               border: 1px solid var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
               background: var(--prime-logo-bs-bcolours-soft-light-yellow, #ebe965);
@@ -270,12 +271,31 @@
           letter-spacing: 0.03vw;
           width: 11.11vw;
         }
+        .form__btn {
+          position: relative;
+          width: 13.13vw;
+          height: 3.89vw;
+          right: 0;
+          span {
+            padding: 0.69vw 2.78vw;
+            color: #4a399d;
+            font-size: 1.74vw;
+            letter-spacing: 0.085vw;
+          }
+          // text-align: end;
 
-        button {
-          padding: 0.69vw 2.78vw;
-          color: #4a399d;
-          font-size: 1.74vw;
-          letter-spacing: 0.085vw;
+          &::after {
+            position: absolute;
+            content: '';
+            background-image: url(/assets/images/Psevdo.svg);
+            background-repeat: no-repeat;
+            top: 8px;
+            right: 4px;
+            width: 175px;
+            height: 45px;
+            z-index: -1;
+            background-size: contain;
+          }
         }
       }
 
