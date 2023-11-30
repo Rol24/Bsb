@@ -126,6 +126,7 @@
       }
 
       &--bsb {
+        padding-left: 3px;
         p {
           font-family: 'Press Start 2P';
           font-size: 80px;
@@ -134,11 +135,11 @@
           line-height: normal;
           letter-spacing: 4px;
           text-transform: uppercase;
-          background: var(--gradient-cutting-gradient, linear-gradient(233deg, #2d2650 51.6%, #dfdc01 51.62%));
+          background: var(--gradient-cutting-gradient, linear-gradient(197deg, #2D2650 51.6%, #DFDC01 51.62%));
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 5px #2d2650;
+          -webkit-text-stroke: 6px #2d2650;
         }
       }
     }

@@ -2,60 +2,71 @@ mixin header
     .header
         .container
             .header__inner
-                .header__up-menuleft
-                    <svg class = "menuHover"  width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.7343 16.2343H29.4231V29.9231H15.7343V16.2343Z" fill="#F5F5F5" fill-opacity="0.2"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M45 23C45 35.4264 34.9264 45.5 22.5 45.5C10.0736 45.5 0 35.4264 0 23C0 10.5736 10.0736 0.5 22.5 0.5C34.9264 0.5 45 10.5736 45 23ZM22.5 39.049C31.2767 39.049 38.3916 31.934 38.3916 23.1573C38.3916 14.3806 31.2767 7.26574 22.5 7.26574C13.7233 7.26574 6.60839 14.3806 6.60839 23.1573C6.60839 31.934 13.7233 39.049 22.5 39.049Z" fill="#F5F5F5" fill-opacity="0.2"/>
+                .header__up-men.js-box.boxeft
+                    <svg class = "headerSvgLeft menuHover"  viewBox="0 0 45 46" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7343 16.2343H29.4231V29.9231H15.7343V16.2343Z"  />
+                    <path fill-r.js-box.boxe="evenodd" clip-r.js-box.boxe="evenodd" d="M45 23C45 35.4264 34.9264 45.5 22.5 45.5C10.0736 45.5 0 35.4264 0 23C0 10.5736 10.0736 0.5 22.5 0.5C34.9264 0.5 45 10.5736 45 23ZM22.5 39.049C31.2767 39.049 38.3916 31.934 38.3916 23.1573C38.3916 14.3806 31.2767 7.26574 22.5 7.26574C13.7233 7.26574 6.60839 14.3806 6.60839 23.1573C6.60839 31.934 13.7233 39.049 22.5 39.049Z"  />
                     </svg>
-                .burger-input
-                    input(type="text")
+                .burger-input 
+                    input(type="text" placeholder = "Поиск по сайту")
+                    <svg class = "inputSearch" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.82812 2H14.8281V4H6.82812V2ZM4.82812 6V4H6.82812V6H4.82812ZM4.82812 14H2.82812V6H4.82812V14ZM6.82812 16H4.82812V14H6.82812V16ZM14.8281 16V18H6.82812V16H14.8281ZM16.8281 14H14.8281V16H16.8281V18H18.8281V20H20.8281V22H22.8281V20H20.8281V18H18.8281V16H16.8281V14ZM16.8281 6H18.8281V14H16.8281V6ZM16.8281 6V4H14.8281V6H16.8281Z"  />
+                    </svg>
                 .header__up-menurigth#openBurger
-                    <svg class = "menuHover"  width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.485107 0.366028H14.1739V14.0548H0.485107V0.366028Z" fill="#F5F5F5" fill-opacity="0.2"/>
-                    <path d="M21.3112 0.366028H35.0001V14.0548H21.3112V0.366028Z" fill="#F5F5F5" fill-opacity="0.2"/>
-                    <path d="M21.3112 21.9451H35.0001V35.6339H21.3112V21.9451Z" fill="#F5F5F5" fill-opacity="0.2"/>
-                    <path d="M0.485114 21.8938H14.1739V35.5826H0.485114V21.8938Z" fill="#F5F5F5" fill-opacity="0.2"/>
+                    <svg class = "headerSvgRight menuHover"  viewBox="0 0 35 36"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.485107 0.366028H14.1739V14.0548H0.485107V0.366028Z"  />
+                    <path d="M21.3112 0.366028H35.0001V14.0548H21.3112V0.366028Z"  />
+                    <path d="M21.3112 21.9451H35.0001V35.6339H21.3112V21.9451Z"  />
+                    <path d="M0.485114 21.8938H14.1739V35.5826H0.485114V21.8938Z"  />
                     </svg>
         .burger-menu#burger
             .container 
                 .burger-menu-inner
                     .burger-main
-                        ul 
-                            span Решения
-                            li Информационная безопасность
-                            li Информационные технологии
-                            li Системы безопасности
-                            li Импортозамещение  
-                        ul 
-                            span Продукты
-                            li Информационная безопасность
-                            li Информационные технологии
-                            li Системы безопасности
+                        .js-box.box
+                            .label Решения
+                            ul.content
+                                li Информационная безопасность
+                                li Информационные технологии
+                                li Системы безопасности
+                                li Импортозамещение  
+                        .js-box.box 
+                            .label Продукты
+                            ul.content
+                                li Информационная безопасность
+                                li Информационные технологии
+                                li Системы безопасности
 
-                        ul 
-                            span О компании
-                            li Сертификаты и лицензии
-                            li Вакансии
-                            li Контактная информация
+                        .js-box.box 
+                            .label О компании
+                            ul.content
+                                li Сертификаты и лицензии
+                                li Вакансии
+                                li Контактная информация
 
-                        ul 
-                            span Экспертиза
-                            li Кейсы
-                            li Информационные технологии
-                            li Системы безопасности
-                        ul 
-                            span Услуги
-                            li Сертификаты и лицензии
-                            li Вакансии
-                            li Контактная информация
-                        ul 
-                            span Партнеры
+                        .js-box.box 
+                            .label Экспертиза
+                            ul.content
+                                li Кейсы
+                                li Информационные технологии
+                                li Системы безопасности
+                        .js-box.box 
+                            .label Услуги
+                            ul.content
+                                li Сертификаты и лицензии
+                                li Вакансии
+                                li Контактная информация
+                        .js-box.box 
+                            .label Партнеры
+                            ul.content
+                                li Вакансии
                     .burger-application
-                        .burger-application--text 
-                            p.big Заинтересовались нашими услугами?
-                            p.small Оставьте заявку и мы обязательно свяжемся с Вами!
-                        button.burger-application--btn
-                            span Оставить заявку
+                        .burger-application__container
+                            .burger-application--text 
+                                p.big Заинтересовались нашими услугами?
+                                p.small Оставьте заявку и мы обязательно свяжемся с Вами!
+                            button.burger-application--btn
+                                span Оставить заявку
                     .burger-info
                         .burger-info--left
                             p.num +7 495 741-46-60

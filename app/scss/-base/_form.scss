@@ -48,6 +48,13 @@
 
     &-fio {
       input {
+        color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
         border-radius: 7px;
         border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
         background: rgba(255, 255, 255, 0.3);
@@ -61,6 +68,13 @@
       gap: 36px;
 
       input {
+        color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
         border-radius: 7px;
         border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
         background: rgba(255, 255, 255, 0.3);
@@ -74,6 +88,14 @@
       position: relative;
 
       textarea {
+
+        color: var(--prime-logo-bs-bcolours-ancet-txt-grey, #555454);
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
         border-radius: 7px;
         border: 2px solid var(--cmy-kfor-bsbcmyk-ref-grey, #999);
         background: rgba(255, 255, 255, 0.3);
@@ -196,14 +218,16 @@
       align-items: flex-start;
       caret-color: #dfdc01;
     }
-    input:hover {
-      //   border-radius: 30px;
-      border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
-      background: rgba(255, 255, 255, 0.8);
-    }
-    textarea:hover {
-      border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
-      background: rgba(255, 255, 255, 0.8);
+    @media (hover: hover) and (pointer: fine) {
+      input:hover {
+        //   border-radius: 30px;
+        border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+        background: rgba(255, 255, 255, 0.8);
+      }
+      textarea:hover {
+        border: 3px solid var(--prime-logo-bs-bcolours-logo-yellow, #dfdc01);
+        background: rgba(255, 255, 255, 0.8);
+      }
     }
   }
 
@@ -281,6 +305,7 @@
             color: #4a399d;
             font-size: 1.74vw;
             letter-spacing: 0.085vw;
+            // opacity: 0;
           }
           // text-align: end;
 
@@ -289,12 +314,22 @@
             content: '';
             background-image: url(/assets/images/Psevdo.svg);
             background-repeat: no-repeat;
-            top: 8px;
-            right: 4px;
-            width: 175px;
-            height: 45px;
+            top: 0.56vw;
+            // right: 0;
+            right: 0;
+            width: 12.15vw;
+            height: 3.13vw;
             z-index: -1;
-            background-size: contain;
+            // background-size: contain;
+          }
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              span {
+                margin-top: -1.11vw;
+                margin-left: -0.83vw;
+              }
+              //   background-color: #2d2650;
+            }
           }
         }
       }
@@ -447,22 +482,30 @@
           text-align: left;
         }
 
-        button {
+        .form__btn {
           text-align: end;
           background: #dfdc01;
           display: inline-flex;
           padding: 2.78vw 11.11vw;
           justify-content: center;
           align-items: center;
-          color: #4a399d;
-          font-family: Handjet;
-          font-size: 4.44vw;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          letter-spacing: 1.25px;
           width: 39.72vw;
+          height: 10.56vw;
+          margin-left: auto;
+          margin-top: 4.44vw;
+          
+          span{
+            color: #4a399d;
+            font-family: Handjet;
+            font-size: 4.44vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.25px;
+            
+          }
         }
+        
       }
 
       ::placeholder {

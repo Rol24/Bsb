@@ -28,13 +28,15 @@ mixin footer
                             ul Партнеры
                         .footer__inner-upright
                             .footer__inner-upright-first 
-                                p.footer__inner-upright-txt +7 495 741-46-60 
+                                p.footer__inner-upright-txt: a(href="tel:+74957414660") +7 495 741-46-60  
                                 p.footer__inner-upright-info: a(href="mailto:info@bd-decurity.ru?subject=Вопрос по HTML") info@bd-decurity.ru
                             .footer__inner-upright-second 121170, Российская<br> Федерация, <br> г. Москва, ул. 1812 года, <br> д.10, к.2, кв.1
                             .footer__inner-upright-third 
                                 .footer__inner-upright-thirdin 
-                                    img(src="/assets/images/footervk.svg", alt="")
-                                    img(src="/assets/images/footertg.svg", alt="")
+                                    a(href="##") 
+                                        img(src="/assets/images/footervk.svg", alt="")
+                                    a(href="##")  
+                                        img(src="/assets/images/footertg.svg", alt="")
                     .footer__inner-middle
                         //- img(src="/assets/images/footerLine.svg", alt="")
                     .footer__inner-down 
@@ -45,7 +47,7 @@ mixin footer
                         .footer__inner-down-text.footer__inner-down-textfour Разработано в 
                             img(src="/assets/images/asteqLogo.svg", alt="")
                 .footer__mobile
-                    .box
+                    .js-box.box
                         .label Решения
                         .content
                             ul
@@ -53,36 +55,35 @@ mixin footer
                                 li  Информационные технологии
                                 li  Системы безопасности
                                 li  Импортозамещение
-                    .box
+                    .js-box.box
                         .label Продукты
                         .content
                             ul
                                 li Информационная безопасность
                                 li Информационные технологии
                                 li Системы безопасности
-                    .box
+                    .js-box.box
                         .label О компании
                         .content
                             ul 
                                 li Новости
                                 li Вакансии
                                 li Контактная информация
-                    .box
+                    .js-box.box
                         .label Экспертиза
                         .content
                             ul 
                                 li Кейсы
-                    .box
+                    .js-box.box
                         .label Услуги    
                         .content
                             ul 
                                 li Новости
                                 li Вакансии
                                 li Контактная информация
-                    .box
+                    .js-box.box
                         .label Партнеры    
-                        .content
-                            ul 
-                                li Новости
-                                li Вакансии
-                                li Контактная информация
+                        ul.content
+                            li Новости
+                            li Вакансии
+                            li Контактная информация

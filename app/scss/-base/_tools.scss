@@ -156,15 +156,13 @@
         // height: 272px;
         flex-shrink: 0;
 
-        &--cloud{
+        &--cloud {
           transition: all 0.3s ease-in-out;
 
-          #cloudCursor{
+          #cloudCursor {
             transition: all 0.3s ease-in-out;
-
           }
         }
-
       }
 
       &--textbtn {
@@ -195,7 +193,7 @@
           background-image: url('/assets/images/Psevdo.svg');
           background-repeat: no-repeat;
           top: 5px;
-          left: 10px;
+          left: 9px;
 
           // bottom: -17px;
           // right: -20px;
@@ -336,7 +334,7 @@
         }
 
         &--image {
-          img {
+          svg {
             width: 20vw;
             height: 18.89vw;
           }
@@ -619,8 +617,8 @@
         }
 
         &--btn {
-          width: 205px;
-          height: 56px;
+          width: 45.56vw;
+          height: 12.78vw;
           display: inline-flex;
           padding: 10px 40px;
           justify-content: center;
@@ -630,12 +628,12 @@
 
           span {
             color: var(--prime-logo-bs-bcolours-support-light-purple, #4a399d);
-            font-family: 'Handjet';
-            font-size: 4.44vw;
+            font-family: "Handjet";
+            font-size: 16px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            letter-spacing: 1.25px;
+            letter-spacing: 0.8px;
           }
         }
 
@@ -674,39 +672,36 @@
     }
   }
 
-  .lv{
-    transform: translate(-8px,-80px);
+  .lv {
+    transform: translate(-8px, -80px);
     transition: all 0.3s ease-in-out;
+  }
+  .pv {
+    transform: translate(53px, -80px);
+    transition: all 0.3s ease-in-out;
+  }
+  .pn {
+    transform: translate(53px, -27px);
+    transition: all 0.3s ease-in-out;
+  }
+  .ln {
+    transform: translate(-8px, -27px);
+    transition: all 0.3s ease-in-out;
+  }
 
-  }
-  .pv{
-    transform: translate(53px,-80px);
-    transition: all 0.3s ease-in-out;
-  }
-  .pn{
-    transform: translate(53px,-27px);
-    transition: all 0.3s ease-in-out;
-  }
-  .ln{
-    transform: translate(-8px,-27px);
-    transition: all 0.3s ease-in-out;
-  }
-
-
-  .elv{
+  .elv {
     transform: translate(-18px, -27px);
     transition: all 0.3s ease-in-out;
-
   }
-  .epv{
+  .epv {
     transform: translate(18px, -27px);
     transition: all 0.3s ease-in-out;
   }
-  .epn{
+  .epn {
     transform: translate(18px, 27px);
     transition: all 0.3s ease-in-out;
   }
-  .eln{
+  .eln {
     transform: translate(-18px, 27px);
     transition: all 0.3s ease-in-out;
   }

@@ -414,7 +414,7 @@
         top: 0;
         left: 0;
         content: '';
-        width: 339px;
+        width: 100%;
         background-size: cover;
         /* width: 391px; */
         backdrop-filter: brightness(40%);
@@ -626,6 +626,10 @@
         border: 5px solid var(--prime-logo-bs-bcolours-almost-white, #f5f5f5);
         background-repeat: no-repeat;
         padding: 5.56vw 8.33vw;
+        transition: all 0.9s ease-in-out;
+        &::before{
+          transition: all 0.9s ease-in-out;
+        }
       }
     }
 

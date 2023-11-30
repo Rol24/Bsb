@@ -47,8 +47,95 @@
   }
 }
 
-
-
-.bodyHidden{
-    overflow: hidden;
+.bodyHidden {
+  overflow: hidden;
 }
+
+@media screen and (max-width: 576px) {
+  .box {
+    transition: all 0.4s ease;
+
+    &.active {
+      .label::after {
+        transform: rotate(360deg);
+        // background-color: #2D2650;
+        transition: all 0.5s ease;
+      }
+
+      .content {
+        transition: all 0.4s ease;
+      }
+    }
+
+    margin-bottom: 6.94vw;
+    // &:not(:last-child) {
+    //     // margin-bottom: 12px;
+    // }
+
+    
+    .label {
+      // transition: all 0.3s;
+      // border-radius: 7px;
+      // background: var(--prime-logo-bs-bcolours-almost-white, #F5F5F5);
+      color: var(--prime-logo-bs-bcolours-logo-blue-purple, #2d2650);
+      font-family: Handjet;
+      font-size: 4.44vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.25vw;
+      position: relative;
+      // padding: 3.33vw 3.89vw;
+
+      transition: all 0.4s ease;
+
+      &:after {
+        position: absolute;
+        content: url('/assets/images/footerMobileNext.svg');
+        // width: 8.89vw;
+        // height: 8.89vw;
+        transform: rotate(180deg);
+        top: 2.56vw;
+        // transform: translateY(-30%);
+        right: 44.67vw;
+        transition: all 0.5s;
+      }
+    }
+    .content {
+      position: relative;
+      max-height: 0;
+      overflow: hidden;
+      color: var(--prime-logo-bs-bcolours-logo-dark-grey, #2b2a28);
+      font-family: PT Sans;
+      // font-size: 4.44vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      transition: all 0.4s ease-in-out;
+
+      ul {
+        li {
+          // position: relative;
+          display: flex;
+          align-items: center;
+          gap: 3.33vw;
+          margin-top: 2.78vw;
+          font-size: 3.33vw;
+
+          &::before {
+            // position: absolute;
+            content: '';
+            background-image: url('/assets/images/acordPoint.svg');
+            width: 8.11vw;
+            height: 7.11vw;
+            background-size: 9.11vw 7.11vw;
+            // margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
